@@ -1,0 +1,30 @@
+html {
+    font-size: 120%;
+}
+
+code {
+    color: black;
+}
+
+.container {
+    padding: 3em;
+}
+
+header {
+    border-bottom: 5px solid #eee;
+}
+
+section {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contact {
+    text-align: right;
+}
+
+aside {
+}
+
+.projects {
+}
