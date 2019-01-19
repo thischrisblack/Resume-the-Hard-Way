@@ -1,17 +1,16 @@
 export var resume = {
 
-
-  name: 'Chris Black',
+  name: 'Your Name',
 
   position: 'Web Developer',
 
-  address: '916 S. 5th Ave, Unit 1, Tucson, AZ 85701',
+  address: '123 E. Main St, Anytown, AR 45875',
 
-  phone: '520-269-5118',
+  phone: '555-555-5555',
 
-  email: 'black@chrisblack.net',
+  email: 'you@youremail.com',
 
-  portfolio: 'www.chrisblack.net/code',
+  portfolio: 'www.yourportfoliosite.com',
   
   skills: [
     'HTML5',
@@ -25,88 +24,43 @@ export var resume = {
 
   experience: [
     {
-      organization: 'Chicago Music Store',
-      location: 'Tucson, AZ',
-      date: '2008 - present',
-      description: 'While serving as bookkeeper, sheet music manager, and ad hoc web developer.',
+      organization: 'Organization',
+      location: 'Location',
+      date: 'Dates employed',
+      description: 'Description of duties',
       projects: [
         {
-          name: 'Rental Reservation System',
-          description: 'A public-facing web app allowing customers to select and reserve rental instruments, purchase accessories, and make initial payments.',
-          link: 'www.chicagomusicstore.com/rentals',
+          name: 'Big Web Project',
+          description: 'Dexription of big web project',
+          link: 'www.thatproject.com',
           skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'WordPress']
         },
         {
-          name: 'The Fishpond',
-          description: 'An in-house contact management tool allowing staff to track collection activities on delinquent accounts.',
-          link: 'www.chrisblack.net/code',
+          name: 'Another Awesome Project',
+          description: 'This project was so awesome.',
+          link: 'www.whereisitat.com',
           skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'JavaScript']
-        },
-        {
-          name: 'Order Tracker',
-          description: 'An in-house tool for managing large, complicated sheet music orders for a state-wide performance organization.',
-          link: 'www.chrisblack.net/code',
-          skills: ['HTML', 'CSS', 'PHP', 'MySQL']
-        },
-        {
-          name: 'Rental Event Planner',
-          description: 'An in-house tool for staff and management to plan for "rental night" events at area schools.',
-          link: '',
-          skills: ['HTML', 'CSS', 'PHP', 'MySQL']
-        },
-        {
-          name: 'Public Website',
-          description: 'A WordPress site using a stock theme with custom CSS.',
-          link: 'www.chicagomusicstore.com',
-          skills: ['HTML', 'CSS', 'WordPress']
         }
       ]
     },
 
     {
-      organization: 'ChamberLab',
-      location: 'Tucson, AZ',
-      date: '2010 - present',
-      description: 'As founder and artistic director of an alt-classical concert series.',
+      organization: 'Another Organization',
+      location: 'Location',
+      date: 'Dates',
+      description: 'What you did there.',
       projects: [
         {
-          name: 'Vexations Event Website',
-          description: 'An online recruitment and organizational hub for a 15-hour musical marathon performance, along with a JavaScript repetition counter for the event',
-          link: 'www.chrisblack.net/code',
+          name: 'Incredible Project',
+          description: 'Such a good project you cannot imagine.',
+          link: 'www.seeithere.com',
           skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'JavaScript', 'W3CSS']
         },
         {
-          name: 'ChamberLab Website',
-          description: 'A simple WordPress site for the concert series.',
-          link: 'www.chamberlab.org',
+          name: 'Another one.',
+          description: 'You get the idea.',
+          link: 'www.itsanorgthing.org',
           skills: ['WordPress']
-        }
-      ]
-    },
-
-    {
-      organization: 'Other Recent Projects',
-      description: 'As musician and concert promoter.',
-      location: '',
-      date: '',
-      projects: [
-        {
-          name: 'Who Plays Where',
-          description: 'A live music listing for Tucson.',
-          link: 'www.chrisblack.net/code',
-          skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'JavaScript', 'Bootstrap']
-        },
-        {
-          name: 'Music Catalog',
-          description: ' An online music catalog, filterable by mood, instrumentation, tempo, and sound quality.',
-          link: 'www.chrisblack.net/code',
-          skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'W3CSS']
-        },
-        {
-          name: 'Chris Black Music',
-          description: 'My general music website.',
-          link: 'www.chamberlab.org',
-          skills: ['HTML', 'CSS', 'PHP', 'Bootstrap']
         }
       ]
     }
