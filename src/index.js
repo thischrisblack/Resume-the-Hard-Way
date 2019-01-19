@@ -12,14 +12,12 @@ function objectHandler(object, parent = document.querySelector('body')) {
     keys.forEach(key => {        
         // Test if array and route accordingly.
         if (Array.isArray(object[key])) {
-            arrayHandler(object, key, parent);
-            
+            arrayHandler(object, key, parent);            
         } else {
             nodeAppender(object[key], key, parent);        
         }
     });
 }
-
 
 // nodeAppender creates and displays DOM nodes, or routes input back through
 // objectHandler if it's an object
@@ -39,7 +37,6 @@ function nodeAppender(value, key, parent, type = 'div') {
 
 // If the object property is an array, a new UL is created
 // and the elements are sent to the nodeAppender
-
 function arrayHandler(object, key, parent) {
 
     // All arrays are made into UL, with class of object property name.
@@ -53,50 +50,4 @@ function arrayHandler(object, key, parent) {
     });
 }
 
-
-
 objectHandler(res);
-
-
-// runResume(res);
-
-// function runResume(object) {
-
-//     let keys = Object.getOwnPropertyNames(object);
-
-//     keys.forEach(key => {
-
-//         // Check if it's not an array
-//         if (!Array.isArray(res[key])) {
-//             singleInsert(key);
-//         } else {
-//             // If it is an array, create a UL and loop through the values
-            
-//         }
-    
-//     });
-// }
-
-
-// function singleInsert(key) {
-//     if (key === 'email' || key === 'portfolio') {
-//         // Clear the space
-//         document.querySelector('#'+key).textContent = '';
-
-//         // Make <a> element
-//         var link = document.createElement('a');
-
-//         // Href, ID attribute
-//         let href = (key === 'email') ? 'mailto:' + res[key] : 'http://' + res[key];
-//         link.setAttribute('href', href);
-//         link.setAttribute('ID', key + '-link');
-        
-//         // Insert a tags, then add link text.
-//         document.querySelector('#'+key).appendChild(link);
-//         document.querySelector('#'+key+'-link').textContent = res[key];
-        
-//     } else {
-//         document.querySelector('#'+key).textContent = res[key];
-//     }
-
-// }

@@ -30,16 +30,16 @@ export var resume = {
       description: 'Description of duties',
       projects: [
         {
-          name: 'Big Web Project',
-          description: 'Dexription of big web project',
-          link: 'www.thatproject.com',
-          skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'WordPress']
+          project_name: 'Big Web Project',
+          project_description: 'Dexription of big web project',
+          project_link: 'www.seetheproject.com',
+          project_skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'WordPress']
         },
         {
-          name: 'Another Awesome Project',
-          description: 'This project was so awesome.',
-          link: 'www.whereisitat.com',
-          skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'JavaScript']
+          project_name: 'Another Awesome Project',
+          project_description: 'This project was so awesome.',
+          project_link: 'www.seetheproject.com',
+          project_skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'JavaScript']
         }
       ]
     },
@@ -51,16 +51,16 @@ export var resume = {
       description: 'What you did there.',
       projects: [
         {
-          name: 'Incredible Project',
-          description: 'Such a good project you cannot imagine.',
-          link: 'www.seeithere.com',
-          skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'JavaScript', 'W3CSS']
+          project_name: 'Incredible Project',
+          project_description: 'Such a good project you cannot imagine.',
+          project_link: 'www.seetheproject.com',
+          project_skills: ['HTML', 'CSS', 'PHP', 'MySQL', 'JavaScript', 'W3CSS']
         },
         {
-          name: 'Another one.',
-          description: 'You get the idea.',
-          link: 'www.itsanorgthing.org',
-          skills: ['WordPress']
+          project_name: 'Another one.',
+          project_description: 'You get the idea.',
+          project_link: 'www.seetheproject.com',
+          project_skills: ['WordPress']
         }
       ]
     }
