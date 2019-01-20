@@ -5,9 +5,10 @@ html {
 .page {
     display: grid;
     width: 100%;
+    grid-auto-columns: 1fr;
     grid-template: ". . . top top top top top top   . . ."
-                   ". . . head head head head head contact . . ."
-                   ". . . main main main main main side . . ."
+                   ". . . head head head head contact contact . . ."
+                   ". . . main main main main side side . . ."
                    ". . . foot foot foot foot foot foot . . ."
   }
 
