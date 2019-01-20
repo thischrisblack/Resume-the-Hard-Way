@@ -1,6 +1,4 @@
 import style from "./main.css";
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {resume as res} from './resume.js';
 
 // objectHandler is the entry point for the resume object.
@@ -51,3 +49,23 @@ function arrayHandler(object, key, parent) {
 }
 
 objectHandler(res);
+
+let header = document.querySelector('header');
+let address = document.querySelector('address');
+let main = document.querySelector('main');
+let port = document.querySelector('.portfolio-place');
+let skill = document.querySelector('.skills-place');
+
+let name = document.querySelector('.name');
+let position = document.querySelector('.position');
+let contact = document.querySelector('.contact');
+let portfolio = document.querySelector('.portfolio');
+let skills = document.querySelector('.skills');
+let experience = document.querySelector('.experience');
+
+header.appendChild(name);
+header.appendChild(position);
+address.appendChild(contact);
+main.appendChild(experience);
+port.appendChild(portfolio);
+skill.appendChild(skills);

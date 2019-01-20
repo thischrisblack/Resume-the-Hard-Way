@@ -4,11 +4,17 @@ export var resume = {
 
   position: 'Web Developer',
 
-  address: '123 E. Main St, Anytown, AR 45875',
+  contact: [
+    '123 E. Main St, Anytown, Anystate 12345',
+    '555-555-5555',
+    'you@youremail.com'
+  ],
 
-  phone: '555-555-5555',
+  // address: '123 E. Main St, Anytown, AR 45875',
 
-  email: 'you@youremail.com',
+  // phone: '555-555-5555',
+
+  // email: 'you@youremail.com',
 
   portfolio: 'www.yourportfoliosite.com',
   

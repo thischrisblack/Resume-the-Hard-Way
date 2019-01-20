@@ -1,3 +1,48 @@
 html {
     font-size: 100%;
 }
+
+.page {
+    display: grid;
+    width: 100%;
+    grid-template: ". . . top top top top top top   . . ."
+                   ". . . head head head head head contact . . ."
+                   ". . . main main main main main side . . ."
+                   ". . . foot foot foot foot foot foot . . ."
+  }
+
+  @media only screen and (max-width: 768px) {
+    .page {
+        grid-template: "top"
+                       "head"
+                       "contact"
+                       "side"
+                       "main"
+                       "foot"
+      }
+  }
+
+  top {
+      grid-area: top;
+  }
+  
+  header {
+    grid-area: head;
+  }
+  
+  aside {
+    grid-area: side;
+  }  
+  
+  address {
+    grid-area: contact;
+    text-align: right;
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  footer {
+    grid-column: foot;
+  }
