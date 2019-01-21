@@ -10,8 +10,16 @@ code {
   padding: 3em;
 }
 
+.section-header {
+  text-transform: uppercase;
+}
+
 header {
   border-bottom: 5px solid #eee;
+}
+
+header .section-header {
+  display: none;
 }
 
 section {

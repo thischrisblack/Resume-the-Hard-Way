@@ -51,21 +51,23 @@ function arrayHandler(object, key, parent) {
     });
 }
 
-// What resume elements go where n the layout.
+// What resume elements go where in the layout.
 var layout = [
-    ['.name', '#name'],
-    ['.position', '#position'],
+    ['.name', '.name-etc'],
+    ['.position', '.name-etc'],
     ['.contact', 'address'],
-    ['.portfolio', '.portfolio-place'],
-    ['.skills', '.skills-place'],
+    ['.portfolio', '.portfolio-link'],
+    ['.skills', '.skills-list'],
     ['.experience', '.projects']
 ];
 
-// Go through the layout array and move the nodes.
+// Go through the layout array and move the nodes to where they belong.
 function nodePlacer(array) {
     array.forEach(el => {
         let parent = document.querySelector(el[1]);
         let child = document.querySelector(el[0]);
+        // Create section header from class name.
+        nodeAppender(child.className, 'section-header', parent);
         parent.appendChild(child);
     });
 }
