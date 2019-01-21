@@ -1,51 +1,31 @@
 html {
-    font-size: 100%;
+  font-size: 120%;
 }
 
-.page {
-    display: grid;
-    width: 100%;
-    grid-template-rows: 100px auto auto auto;
-    grid-auto-columns: 1fr;
-    grid-template: ". . . top top top top top top   . . ."
-                   ". . . head head head head contact contact . . ."
-                   ". . . main main main main side side . . ."
-                   ". . . foot foot foot foot foot foot . . ."
-  }
+code {
+  color: black;
+}
 
-  @media only screen and (max-width: 768px) {
-    .page {
-        grid-template: "top"
-                       "head"
-                       "contact"
-                       "side"
-                       "main"
-                       "foot"
-      }
-  }
+.container {
+  padding: 3em;
+}
 
-  top {
-      grid-area: top;
-      margin-top: 50px;
-  }
-  
-  header {
-    grid-area: head;
-  }
-  
-  aside {
-    grid-area: side;
-  }  
-  
-  address {
-    grid-area: contact;
-    text-align: right;
-  }
-  
-  main {
-    grid-area: main;
-  }
-  
-  footer {
-    grid-column: foot;
-  }
+header {
+  border-bottom: 5px solid #eee;
+}
+
+section {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+address {
+  text-align: right;
+}
+
+aside {
+}
+
+.projects {
+  font-size: 100%;
+}

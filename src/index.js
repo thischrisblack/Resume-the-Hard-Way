@@ -1,3 +1,5 @@
+require('bootstrap')
+import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./main.css";
 const res = require('./resume.json');
 var linkifyStr = require('linkifyjs/string');
@@ -51,12 +53,12 @@ function arrayHandler(object, key, parent) {
 
 // What resume elements go where n the layout.
 var layout = [
-    ['.name', 'header'],
-    ['.position', 'header'],
+    ['.name', '#name'],
+    ['.position', '#position'],
     ['.contact', 'address'],
     ['.portfolio', '.portfolio-place'],
     ['.skills', '.skills-place'],
-    ['.experience', 'main']
+    ['.experience', '.projects']
 ];
 
 // Go through the layout array and move the nodes.
