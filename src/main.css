@@ -1,9 +1,29 @@
-html {
+/* font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Lora', serif; 
+font-family: 'IBM Plex Mono', monospace;*/
+
+
+body {
   font-size: 120%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-code {
-  color: black;
+@page {
+  size: auto;
+  margin: -5mm 0mm 0mm 0mm;
+}
+
+@media print {
+
+  body {
+    font-size: 100%;
+    padding: 15mm 5mm 35mm 10mm;
+  }
+
+  .sidebar {
+    font-size: 90%;
+  }
 }
 
 .container {
@@ -12,28 +32,139 @@ code {
 
 .section-header {
   text-transform: uppercase;
+  font-size: 130%;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  border-bottom: 0px solid #ddd;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 header {
-  border-bottom: 5px solid #eee;
+  border-bottom: 0px solid #000;
+  padding: .5em 0 .5em 0;
+  /* background: #f8f8f8; */
 }
 
 header .section-header {
   display: none;
 }
 
-section {
-  margin-bottom: 20px;
-  margin-top: 20px;
+.sidebar {
+  background: #fafafa;
+}
+
+.name {
+  font-size: 300%;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.position {
+  font-style: italic;
 }
 
 address {
   text-align: right;
+  margin-bottom: 0;
+  line-height: 1.2em;
 }
 
 aside {
 }
 
 .projects {
-  font-size: 100%;
+  padding-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+li.experience {
+  margin-bottom: 30px;
+}
+
+.organization {
+  border-left: 5px solid #ddd;
+  padding: 10px 0 10px 10px;
+  margin-top: 10px;
+}
+
+.org-name {  
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.location::after {
+  content: " — ";
+}
+
+.date {
+  font-style: italic;
+}
+
+.location, .date {
+  display: inline;
+  margin-right: 0px; 
+}
+
+.description {
+  font-style: normal;
+}
+
+ul.projects {
+  list-style-type: none;
+  padding-left: 30px;
+  font-size: 85%;
+  margin: 10px 0 10px 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+ul.projects li {
+  margin: 1em .5em .5em 0;
+}
+
+.project_name {
+  font-weight: bold;
+  display: inline;
+  margin-right: .5em;
+}
+
+.project_name::after {
+  content: ": ";
+}
+
+.project_link {
+font-family: 'IBM Plex Mono', monospace;
+display: inline;
+}
+
+.project_description {
+  line-height: 1.3em;
+}
+
+li.project_skills {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 75%;
+  display: inline;
+  padding: 1px 6px;
+  background: #fafafa;
+  /* border: 1px solid gray;
+  border-radius: 5%; */
+}
+
+.portfolio {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 90%;
+}
+
+li.skills {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 90%;
+  padding: 0px 5px;
+  border: 0px solid #999;
+  border-radius: 5%;
 }

@@ -55,9 +55,9 @@ function arrayHandler(object, key, parent) {
 var layout = [
     ['.name', '.name-etc'],
     ['.position', '.name-etc'],
-    ['.contact', 'address'],
-    ['.portfolio', '.portfolio-link'],
-    ['.skills', '.skills-list'],
+    ['.contact', '.sidebar'],
+    ['.portfolio', '.sidebar'],
+    ['.skills', '.sidebar'],
     ['.experience', '.projects']
 ];
 
@@ -67,7 +67,7 @@ function nodePlacer(array) {
         let parent = document.querySelector(el[1]);
         let child = document.querySelector(el[0]);
         // Create section header from class name.
-        nodeAppender(child.className, 'section-header', parent);
+        nodeAppender(child.className, 'section-header section-header-' + child.className, parent);
         parent.appendChild(child);
     });
 }
@@ -88,6 +88,7 @@ function linkifier() {
 }
 
 
+
 // Start the whole thing.
 objectHandler(res);
 
@@ -96,6 +97,9 @@ nodePlacer(layout);
 
 // Linkify the links
 linkifier();
+
+// Changing the 'EXPERIENCE' text
+document.querySelector('.section-header-experience').innerHTML = 'Experience & Web Projects';
 
 
 // let newTest = linkifyStr(test.textContent);

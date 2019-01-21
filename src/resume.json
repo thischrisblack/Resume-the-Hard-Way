@@ -9,7 +9,7 @@
       "email": "you@youremail.com"
     },
   
-    "portfolio": "www.whereyourstuffis.com",
+    "portfolio": "www.yourstuff.com",
     
     "skills": [
       "HTML5",
@@ -23,10 +23,12 @@
   
     "experience": [
         {
-            "organization": "Organization",
-            "location": "Location",
-            "date": "Dates employed",
-            "description": "Description of duties",
+            "organization": {
+                "org-name": "Organization",
+                "location": "Location",
+                "date": "Dates employed",
+                "description": "Description of duties"
+            },
             "projects": [
             {
                 "project_name": "Big Web Project",
@@ -44,10 +46,12 @@
         },
     
         {
-            "organization": "Another Organization",
-            "location": "Location",
-            "date": "Dates",
-            "description": "What you did there.",
+            "organization": {
+                "org-name": "Organization",
+                "location": "Location",
+                "date": "Dates employed",
+                "description": "Description of duties"
+            },
             "projects": [
             {
                 "project_name": "Incredible Project",
