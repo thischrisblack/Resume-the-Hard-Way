@@ -5,4 +5,5 @@ Takes a resume in JSON format and lays it out on the page with DOM manipulation.
 Up next: 
 
 - Find some sort of HTML to PDF converter.
+- Add name to <title> tag.
 - Go over the code and see what can be modularized and cleaned up.
