@@ -1,5 +1,6 @@
 import style from "./main.css";
-import {resume as res} from './resume.js';
+const res = require('./resume.json');
+var linkifyStr = require('linkifyjs/string');
 
 // objectHandler is the entry point for the resume object.
 // Its default parent node is <body>
@@ -48,24 +49,53 @@ function arrayHandler(object, key, parent) {
     });
 }
 
+// What resume elements go where n the layout.
+var layout = [
+    ['.name', 'header'],
+    ['.position', 'header'],
+    ['.contact', 'address'],
+    ['.portfolio', '.portfolio-place'],
+    ['.skills', '.skills-place'],
+    ['.experience', 'main']
+];
+
+// Go through the layout array and move the nodes.
+function nodePlacer(array) {
+    array.forEach(el => {
+        let parent = document.querySelector(el[1]);
+        let child = document.querySelector(el[0]);
+        parent.appendChild(child);
+    });
+}
+
+// Uses linkifyjs package to linkify the text in selected nodes.
+function linkifier() {
+    // Linkify text in these classes
+    var linkNodes = ['.email', '.portfolio', '.project_link'];
+
+    linkNodes.forEach(node => {
+        let link = document.querySelectorAll(node);
+        link.forEach(el => {
+            let newLink = linkifyStr(el.textContent);
+            el.innerHTML = newLink;
+        });
+        
+    })
+}
+
+
+// Start the whole thing.
 objectHandler(res);
 
-let header = document.querySelector('header');
-let address = document.querySelector('address');
-let main = document.querySelector('main');
-let port = document.querySelector('.portfolio-place');
-let skill = document.querySelector('.skills-place');
+// Place those nodes.
+nodePlacer(layout);
 
-let name = document.querySelector('.name');
-let position = document.querySelector('.position');
-let contact = document.querySelector('.contact');
-let portfolio = document.querySelector('.portfolio');
-let skills = document.querySelector('.skills');
-let experience = document.querySelector('.experience');
+// Linkify the links
+linkifier();
 
-header.appendChild(name);
-header.appendChild(position);
-address.appendChild(contact);
-main.appendChild(experience);
-port.appendChild(portfolio);
-skill.appendChild(skills);
+
+// let newTest = linkifyStr(test.textContent);
+
+// console.log(newTest);
+
+// test.innerHTML = newTest;

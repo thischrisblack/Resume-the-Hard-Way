@@ -5,6 +5,7 @@ html {
 .page {
     display: grid;
     width: 100%;
+    grid-template-rows: 100px auto auto auto;
     grid-auto-columns: 1fr;
     grid-template: ". . . top top top top top top   . . ."
                    ". . . head head head head contact contact . . ."
@@ -25,6 +26,7 @@ html {
 
   top {
       grid-area: top;
+      margin-top: 50px;
   }
   
   header {
