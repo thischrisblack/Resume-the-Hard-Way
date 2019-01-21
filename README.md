@@ -6,4 +6,3 @@ Up next:
 
 - Find some sort of HTML to PDF converter.
 - Go over the code and see what can be modularized and cleaned up.
-- Make the repo public!
