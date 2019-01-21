@@ -27,19 +27,19 @@
                 "org-name": "Organization",
                 "location": "Location",
                 "date": "Dates employed",
-                "description": "Description of duties"
+                "description": "Description of duties."
             },
             "projects": [
             {
                 "project_name": "Big Web Project",
                 "project_description": "Description of big web project",
-                "project_link": "www.seetheproject.com",
+                "project_link": "www.bigwebproject.com",
                 "project_skills": ["HTML", "CSS", "PHP", "MySQL", "WordPress"]
             },
             {
                 "project_name": "Another Awesome Project",
                 "project_description": "This project was so awesome.",
-                "project_link": "www.seetheproject.com",
+                "project_link": "www.anotherawesomeproject.com",
                 "project_skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript"]
             }
             ]
@@ -50,19 +50,19 @@
                 "org-name": "Organization",
                 "location": "Location",
                 "date": "Dates employed",
-                "description": "Description of duties"
+                "description": "Description of duties."
             },
             "projects": [
             {
                 "project_name": "Incredible Project",
                 "project_description": "Such a good project you cannot imagine.",
-                "project_link": "www.seethebigproject.com",
+                "project_link": "www.incredibleproject.com",
                 "project_skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "W3CSS"]
             },
             {
-                "project_name": "Another one.",
+                "project_name": "Another one",
                 "project_description": "You get the idea.",
-                "project_link": "www.seetheproject.com",
+                "project_link": "www.anotherproject.com",
                 "project_skills": ["WordPress"]
             }
             ]

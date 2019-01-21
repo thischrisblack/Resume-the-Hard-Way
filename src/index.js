@@ -87,8 +87,6 @@ function linkifier() {
     })
 }
 
-
-
 // Start the whole thing.
 objectHandler(res);
 
@@ -99,11 +97,5 @@ nodePlacer(layout);
 linkifier();
 
 // Changing the 'EXPERIENCE' text
+// This is totally cheating but I need it right this minute so ...
 document.querySelector('.section-header-experience').innerHTML = 'Experience & Web Projects';
-
-
-// let newTest = linkifyStr(test.textContent);
-
-// console.log(newTest);
-
-// test.innerHTML = newTest;
