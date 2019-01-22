@@ -97,5 +97,6 @@ nodePlacer(layout);
 linkifier();
 
 // Changing the 'EXPERIENCE' text
-// This is totally cheating but I need it right this minute so ...
+// This is totally cheating but I will figure it out later ...
+// Obviously it should be able to take a string with spaces and add underlines
 document.querySelector('.section-header-experience').innerHTML = 'Experience & Web Projects';
