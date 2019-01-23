@@ -15,7 +15,7 @@ function objectHandler(object, parent = document.querySelector('body')) {
         if (Array.isArray(object[key])) {
             arrayHandler(object, key, parent);            
         } else {
-            nodeAppender(object[key], key, parent);        
+            nodeAppender(object[key], key, parent);
         }
     });
 }
