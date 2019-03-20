@@ -2,9 +2,13 @@
     "name": "John Doe",
   
     "position": "Web Developer",
+
+    "address": {
+        "street": "123 E. Main St",
+        "city-state-zip": "Anytown, AR 45875"
+    },
   
     "contact": {
-      "address": "123 E. Main St, Anytown, AR 45875",
       "phone": "555-555-5555",
       "email": "you@youremail.com"
     },

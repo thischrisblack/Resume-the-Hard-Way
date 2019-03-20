@@ -1,5 +1,3 @@
-require('bootstrap')
-import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./main.css";
 const res = require('./resume.json');
 var linkifyStr = require('linkifyjs/string');
@@ -53,12 +51,13 @@ function arrayHandler(object, key, parent) {
 
 // What resume elements go where in the layout.
 var layout = [
-    ['.name', '.name-etc'],
-    ['.position', '.name-etc'],
-    ['.contact', '.sidebar'],
-    ['.portfolio', '.sidebar'],
-    ['.skills', '.sidebar'],
-    ['.experience', '.projects']
+    ['.name', 'name'],
+    ['.address', 'address'],
+    ['.position', 'name'],
+    ['.contact', 'contact'],
+    ['.portfolio', 'aside'],
+    ['.skills', 'aside'],
+    ['.experience', 'main']
 ];
 
 // Go through the layout array and move the nodes to where they belong.
@@ -67,7 +66,7 @@ function nodePlacer(array) {
         let parent = document.querySelector(el[1]);
         let child = document.querySelector(el[0]);
         // Create section header from class name.
-        nodeAppender(child.className, 'section-header section-header-' + child.className, parent);
+        nodeAppender(child.className, 'section-header section-header-' + child.className, parent, 'h1');
         parent.appendChild(child);
     });
 }
@@ -95,8 +94,3 @@ nodePlacer(layout);
 
 // Linkify the links
 linkifier();
-
-// Changing the 'EXPERIENCE' text
-// This is totally cheating but I will figure it out later ...
-// Obviously it should be able to take a string with spaces and add underlines
-document.querySelector('.section-header-experience').innerHTML = 'Experience & Web Projects';
