@@ -5,15 +5,15 @@
 
     "address": {
         "street": "123 E. Main St",
-        "city-state-zip": "Anytown, AR 45875"
+        "city-state-zip": "Anytown, KY 45875"
     },
   
     "contact": {
       "phone": "555-555-5555",
-      "email": "you@youremail.com"
+      "email": "you@example.com"
     },
   
-    "portfolio": "www.yourstuff.com",
+    "portfolio": "www.example.com",
     
     "skills": [
       "HTML5",
@@ -24,6 +24,8 @@
       "Bootstrap",
       "WordPress"
     ],
+
+    "note": "Any note you like here. It will go in the footer.",
   
     "experience": [
         {
@@ -36,14 +38,14 @@
             "projects": [
             {
                 "project_name": "Big Web Project",
+                "project_link": "www.example.com",
                 "project_description": "Description of big web project",
-                "project_link": "www.bigwebproject.com",
                 "project_skills": ["HTML", "CSS", "PHP", "MySQL", "WordPress"]
             },
             {
                 "project_name": "Another Awesome Project",
+                "project_link": "www.example.com",
                 "project_description": "This project was so awesome.",
-                "project_link": "www.anotherawesomeproject.com",
                 "project_skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript"]
             }
             ]
@@ -59,14 +61,14 @@
             "projects": [
             {
                 "project_name": "Incredible Project",
+                "project_link": "www.example.com",
                 "project_description": "Such a good project you cannot imagine.",
-                "project_link": "www.incredibleproject.com",
                 "project_skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "W3CSS"]
             },
             {
                 "project_name": "Another one",
+                "project_link": "www.example.com",
                 "project_description": "You get the idea.",
-                "project_link": "www.anotherproject.com",
                 "project_skills": ["WordPress"]
             }
             ]

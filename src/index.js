@@ -2,43 +2,60 @@ import style from "./main.css";
 const res = require('./resume.json');
 var linkifyStr = require('linkifyjs/string');
 
-// objectHandler is the entry point for the resume object.
-// Its default parent node is <body>
+
+/**
+ * Route an object or array for further processing.
+ * @param {Object} object - The resume JSON file, at first, or a value within that file.
+ * @param {element} parent - The parent node to be passed into the next function.
+ */
 function objectHandler(object, parent = document.querySelector('body')) {
 
     let keys = Object.getOwnPropertyNames(object);
 
-    keys.forEach(key => {        
-        // Test if array and route accordingly.
+    keys.forEach(key => {
         if (Array.isArray(object[key])) {
+            // Pass object, key, and parent node.
             arrayHandler(object, key, parent);            
         } else {
+            // Pass value, key, and parent node.
             nodeAppender(object[key], key, parent);
         }
     });
 }
 
-// nodeAppender creates and displays DOM nodes, or routes input back through
-// objectHandler if it's an object
-function nodeAppender(value, key, parent, type = 'div') {
-    // Creates new node, default 'div' with class and value set to object properties.
+
+
+/**
+ * Create a new DOM node from a key / value pair, or reroute if value is an object.
+ * @param {string|Object|Array} object - The value of the passed key / value pair. 
+ * @param {string} key - The key of the passed key / value pair. 
+ * @param {element} parent - The parent node of created DOM node.
+ * @param {element} [type=div] - The type of created DOM node.
+ */
+function nodeAppender(object, key, parent, type = 'div') {
     var newNode = document.createElement(type);
+    // Set element's class to the key (e.g. 'name' or 'skill').
     newNode.setAttribute('class', key);
     parent.appendChild(newNode);
-    if (typeof value === 'object') {
-        // Objects recurse through the top, with the object and parent updated
-        objectHandler(value, newNode);
+    if (typeof object === 'object') {
+        // Objects go back through the top, with the parent updated.
+        objectHandler(object, newNode);
     } else {   
         // If it's not an object, it's ready to display.     
-        newNode.innerHTML = value;
+        newNode.innerHTML = object;
     }
 }
 
-// If the object property is an array, a new UL is created
-// and the elements are sent to the nodeAppender
+
+/**
+ * Turn arrays into unordered lists.
+ * @param {Array} object - The object with the array in it.
+ * @param {string} key - The key of the array in the object.
+ * @param {element} parent - The parent node of the newly crated <ul> element.
+ */
 function arrayHandler(object, key, parent) {
 
-    // All arrays are made into UL, with class of object property name.
+    // All arrays are made into UL.
     var newList = document.createElement('ul');
     newList.setAttribute('class', key);
     parent.appendChild(newList);
@@ -49,7 +66,10 @@ function arrayHandler(object, key, parent) {
     });
 }
 
-// What resume elements go where in the layout.
+/**
+ * Where do the new nodes go?
+ * Newly-created elements of class [0] are to be appended to element [1].
+ */
 var layout = [
     ['.name', 'name'],
     ['.address', 'address'],
@@ -57,24 +77,34 @@ var layout = [
     ['.contact', 'contact'],
     ['.portfolio', 'aside'],
     ['.skills', 'aside'],
+    ['.note', 'footer'],
     ['.experience', 'main']
 ];
 
-// Go through the layout array and move the nodes to where they belong.
-function nodePlacer(array) {
-    array.forEach(el => {
+/**
+ * Place new DOM nodes in their proper places.
+ * @param {Array} layout - An array of class/element pairs.
+ */
+function nodePlacer(layout) {
+    layout.forEach(el => {
         let parent = document.querySelector(el[1]);
         let child = document.querySelector(el[0]);
-        // Create section header from class name.
-        nodeAppender(child.className, 'section-header section-header-' + child.className, parent, 'h1');
+        // First create section header from each class name.
+        nodeAppender(child.className, 
+                     'section-header section-header-' + child.className, 
+                     parent, 
+                     'h1');
+        // Then append further nodes.
         parent.appendChild(child);
     });
 }
 
-// Uses linkifyjs package to linkify the text in selected nodes.
+/**
+ * Linkify link strings.
+ */
 function linkifier() {
     // Linkify text in these classes
-    var linkNodes = ['.email', '.portfolio', '.project_link'];
+    var linkNodes = ['.email', '.portfolio', '.project_link', '.note'];
 
     linkNodes.forEach(node => {
         let link = document.querySelectorAll(node);
@@ -86,8 +116,12 @@ function linkifier() {
     })
 }
 
+
 // Start the whole thing.
 objectHandler(res);
+
+// Set the page title
+document.title = res.name + ' - Resume';
 
 // Place those nodes.
 nodePlacer(layout);
