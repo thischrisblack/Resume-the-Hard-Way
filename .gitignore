@@ -3,3 +3,6 @@ src/chrisblack.js
 src/chris_black_resume.json
 src/TODO.txt
 dist/
+dist/index.html
+dist/main.css
+dist/main.js
