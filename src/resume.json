@@ -25,7 +25,7 @@
       "WordPress"
     ],
 
-    "note": "Any note you like here. It will go in the footer.",
+    "footer": "Any note you like here. It will go in the footer.",
   
     "experience": [
         {

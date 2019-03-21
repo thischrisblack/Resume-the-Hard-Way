@@ -6,7 +6,7 @@ var linkifyStr = require('linkifyjs/string');
 /**
  * Route an object or array for further processing.
  * @param {Object} object - The resume JSON file, at first, or a value within that file.
- * @param {element} parent - The parent node to be passed into the next function.
+ * @param {element} [parent=document.querySelector('body')] - The parent node to be passed into the next function.
  */
 function objectHandler(object, parent = document.querySelector('body')) {
 
@@ -14,10 +14,10 @@ function objectHandler(object, parent = document.querySelector('body')) {
 
     keys.forEach(key => {
         if (Array.isArray(object[key])) {
-            // Pass object, key, and parent node.
+            // Pass object, current key, and parent node.
             arrayHandler(object, key, parent);            
         } else {
-            // Pass value, key, and parent node.
+            // Pass value of the current key, current key, and parent node.
             nodeAppender(object[key], key, parent);
         }
     });
@@ -75,10 +75,10 @@ var layout = [
     ['.address', 'address'],
     ['.position', 'name'],
     ['.contact', 'contact'],
+    ['.experience', 'main'],
     ['.portfolio', 'aside'],
     ['.skills', 'aside'],
-    ['.note', 'footer'],
-    ['.experience', 'main']
+    ['.footer', 'footer']
 ];
 
 /**
