@@ -31,7 +31,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows:6rem 1fr  min-content ;
+  height: 100vh;
+  grid-template-rows: 6rem 1fr min-content ;
   grid-template-columns: 1fr 3fr min-content 1fr;
   grid-template-areas: ". header header ."
                        ". main aside ."
@@ -41,7 +42,7 @@ body {
   grid-row-gap: 0rem;
 }
 
-@media screen and (max-width: 85em) { 
+@media screen and (max-width: 90em) { 
 
   .container {
     grid-template-rows: min-content 1fr;
@@ -244,18 +245,18 @@ li.experience {
 
 ul.projects {
   list-style-type: none;
-  padding-left: 2rem;
+  padding-left: 0rem;
   margin: 1rem 0 1rem 0;
 }
 
 ul.projects li {
-  margin: 1.5rem .5rem .5rem 0;
+  margin: 2rem .5rem 3rem 0;
 }
 
 .project_name {
-  font-weight: bold;
   margin-right: .5rem;
   display: inline-block;
+  font-weight: bold;
 }
 
 .project_name::after {
@@ -269,25 +270,30 @@ display: inline-block;
 }
 
 .project_description {
-  line-height: 2rem;
-  padding: .5rem 0;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding: .3rem 0;
+    /* border-top: 1px solid #aaa; */
+    margin-top: .6rem;
 }
 
 ul.project_skills {
-  padding-left: 0;
-  display: none;
+    padding-left: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 70%;
+}
+
+ul.project_skills:before {
+    content: "Skills: ";
 }
 
 li.project_skills {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 70%;
   display: inline;
-  padding: 0 .6rem;
-  background: #fafafa;
+  padding-right: 1rem;
 }
 
 li.project_skills::before {
-  content: "-";
+  /* content: "-"; */
 }
 
 
@@ -368,7 +374,7 @@ PRINT STYLES
 @media print {
 
   html {
-      font-size: 50%;
+      font-size: 55%;
   }
 
   body {
@@ -377,9 +383,11 @@ PRINT STYLES
 
   .container {
     grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content 1fr min-content;
     grid-template-areas: "header"
                          "aside"
-                         "main";
+                         "main"
+                         "footer";
     padding: 1.5cm;
     grid-column-gap: 2rem;
     grid-row-gap: 0rem;
@@ -417,7 +425,7 @@ PRINT STYLES
     font-size: 2rem;
     line-height: 2rem;
     font-weight: bold;
-    margin: 1.5rem 0 1rem 0;
+    margin: 2.5rem 0 1rem 0;
     border-bottom: 1px solid #555;
   }
 
@@ -440,8 +448,8 @@ PRINT STYLES
   }
 
   ul.projects {
-    padding-left: 2rem;
-    margin: 0 0 1rem 0;
+    padding-left: 0;
+    margin: 20px 0 1rem 0;
     /* font-family: 'IBM Plex Mono', monospace; */
   }
 

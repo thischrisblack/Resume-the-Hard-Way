@@ -27,7 +27,7 @@
 
     "footer": "Any note you like here. It will go in the footer.",
   
-    "experience": [
+    "selected projects": [
         {
             "organization": {
                 "org-name": "Organization",
