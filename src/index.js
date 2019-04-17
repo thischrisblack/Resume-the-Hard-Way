@@ -1,5 +1,5 @@
 import style from "./main.css";
-const res = require('./resume.json');
+const res = require('./cb-res-current.json');
 var linkifyStr = require('linkifyjs/string');
 
 
