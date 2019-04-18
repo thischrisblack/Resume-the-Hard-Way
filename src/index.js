@@ -75,7 +75,7 @@ var layout = [
     ['.address', 'address'],
     ['.position', 'name'],
     ['.contact', 'contact'],
-    ['.experience', 'main'],
+    ['.projects', 'main'], 
     ['.portfolio', 'aside'],
     ['.skills', 'aside'],
     ['.footer', 'footer']
@@ -104,7 +104,7 @@ function nodePlacer(layout) {
  */
 function linkifier() {
     // Linkify text in these classes
-    var linkNodes = ['.email', '.portfolio', '.project_link', '.note'];
+    var linkNodes = ['.email', '.portfolio', '.project__link', '.note', '.footer'];
 
     linkNodes.forEach(node => {
         let link = document.querySelectorAll(node);
