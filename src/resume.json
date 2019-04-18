@@ -9,69 +9,48 @@
     },
   
     "contact": {
-      "phone": "555-555-5555",
-      "email": "you@example.com"
+        "phone": "555-555-5555",
+        "email": "you@example.com"
     },
   
     "portfolio": "www.example.com",
     
     "skills": [
-      "HTML5",
-      "CSS3",
-      "JavaScript (ES6)",
-      "PHP 7",
-      "MySQL",
-      "Bootstrap",
-      "WordPress"
+        "HTML5",
+        "CSS3",
+        "JavaScript (ES6)",
+        "PHP 7",
+        "MySQL",
+        "Bootstrap",
+        "WordPress"
     ],
 
     "footer": "Any note you like here. It will go in the footer.",
   
-    "selected projects": [
+    "projects": [
         {
-            "organization": {
-                "org-name": "Organization",
-                "location": "Location",
-                "date": "Dates employed",
-                "description": "Description of duties."
-            },
-            "projects": [
-            {
-                "project_name": "Big Web Project",
-                "project_link": "www.example.com",
-                "project_description": "Description of big web project",
-                "project_skills": ["HTML", "CSS", "PHP", "MySQL", "WordPress"]
-            },
-            {
-                "project_name": "Another Awesome Project",
-                "project_link": "www.example.com",
-                "project_description": "This project was so awesome.",
-                "project_skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript"]
-            }
-            ]
+            "project__name": "Big Web Project",
+            "project__link": "www.example.com",
+            "project__description": "Description of big web project",
+            "project__skills": ["HTML", "CSS", "PHP", "MySQL", "WordPress"]
         },
-    
         {
-            "organization": {
-                "org-name": "Organization",
-                "location": "Location",
-                "date": "Dates employed",
-                "description": "Description of duties."
-            },
-            "projects": [
-            {
-                "project_name": "Incredible Project",
-                "project_link": "www.example.com",
-                "project_description": "Such a good project you cannot imagine.",
-                "project_skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "W3CSS"]
-            },
-            {
-                "project_name": "Another one",
-                "project_link": "www.example.com",
-                "project_description": "You get the idea.",
-                "project_skills": ["WordPress"]
-            }
-            ]
+            "project__name": "Another Awesome Project",
+            "project__link": "www.example.com",
+            "project__description": "This project was so awesome.",
+            "project__skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript"]
+        },           
+        {
+            "project__name": "Incredible Project",
+            "project__link": "www.example.com",
+            "project__description": "Such a good project you cannot imagine.",
+            "project__skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "W3CSS"]
+        },
+        {
+            "project__name": "Another one",
+            "project__link": "www.example.com",
+            "project__description": "You get the idea.",
+            "project__skills": ["WordPress"]
         }
     ]
 }
