@@ -165,12 +165,6 @@ contact h1 {
 
 @media screen and (max-width: 25em) { 
 
-    .container {
-        padding: 1rem;
-        grid-column-gap: 0rem;
-        grid-row-gap: 0rem;
-    }
-
   header {
     grid-template-columns: 1fr;
     grid-template-areas: "name"
@@ -194,12 +188,58 @@ contact h1 {
 
 
 /****************************************************************************************************
-PROJECTS
+EXPERIENCE
 ****************************************************************************************************/
 
 main {
   grid-area: main;
 }
+
+/* The Jobs */
+
+ul.experience {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li.experience {
+  margin-bottom: 3rem;
+}
+
+.organization {
+  border-left: .4rem solid #ccc;
+  padding: 1rem 0 1rem 1rem;
+  margin-top: 1.5rem;
+}
+
+.org-name {  
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.location::after {
+  content: " — ";
+}
+
+.date {
+  font-style: italic;
+}
+
+.date::after {
+  content: " — ";
+}
+
+.location, .date {
+  display: inline;
+  margin-right: 0; 
+}
+
+.description {
+  font-style: normal;
+  display: inline;
+}
+
 
 /* The projects */
 
@@ -213,59 +253,47 @@ ul.projects li {
   margin: 2rem .5rem 3rem 0;
 }
 
-.project__name {
+.project_name {
+  margin-right: .5rem;
   display: inline-block;
   font-weight: bold;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.7rem;
 }
 
-.project__link {
-font-size: 1.7rem;
-display: inline-block;
-}
-
-.project__link:before {
-  content: '//';
+.project_name::after {
+  content: ' | ';
   margin: 0 1rem;
 }
 
-@media screen and (max-width: 25em) { 
-
-    .project__name {
-    display: block;
-    }
-
-    .project__link:before {
-      content: '';
-      margin: 0;
-    }
+.project_link {
+font-size: 90%;
+display: inline-block;
 }
 
-.project__description {
+.project_description {
     font-size: 1.6rem;
     line-height: 2rem;
     padding: .3rem 0;
-    margin: .4rem 0;
+    /* border-top: 1px solid #aaa; */
+    margin-top: .6rem;
 }
 
-ul.project__skills {
+ul.project_skills {
     padding-left: 0;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 70%;
 }
 
-li .project__skills {
+ul.project_skills:before {
+    content: "Skills: ";
+}
+
+li.project_skills {
   display: inline;
+  padding-right: 1rem;
 }
 
-li.project__skills:after {
-  content: '/';
-  padding: .5rem;
-}
-
-li.project__skills:last-child:after {
-  content: '';
+li.project_skills::before {
+  /* content: "-"; */
 }
 
 
@@ -298,7 +326,7 @@ li.skills {
   aside {
     font-size: 1.4rem;
     border-bottom: 0px solid #aaa;
-    padding: 0;
+    padding-bottom: 1.4rem;
   }
 
   li.skills {
@@ -322,9 +350,8 @@ FOOTER
 ****************************************************************************************************/
 
 footer {
-  border-top: 1px solid #666;
+  border-top: 1px solid #000;
   padding-top: 1rem;
-  padding-bottom: 1rem;
   font-size: 1.4rem;
   grid-area: footer;
   text-align: center;
@@ -376,7 +403,7 @@ PRINT STYLES
   }
 
   footer {
-    /* display: none; */
+    display: none;
   }
 
   li.skills {
@@ -402,16 +429,33 @@ PRINT STYLES
     border-bottom: 1px solid #555;
   }
 
+  ul.experience {
+    margin-left: 1rem;
+  }
+
+  li.experience {
+    margin-bottom: 1rem;
+  }
+
+  .organization {
+    border-left: none;
+    padding: 1rem 0 1rem 0;
+    margin-top: 1rem;
+  }
+
+  .org-name {  
+    margin-bottom: .5rem;
+  }
+
   ul.projects {
     padding-left: 0;
     margin: 20px 0 1rem 0;
     /* font-family: 'IBM Plex Mono', monospace; */
   }
 
-  .project__description {
+  .project_description {
     line-height: 2rem;
-    padding: .3rem 0;
-    margin: .4rem 0 0 0;
+    margin-top: .2rem;
   }
 
 }

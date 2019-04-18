@@ -1,5 +1,5 @@
 import style from "./main.css";
-const res = require('./resume.json');
+const res = require('./cb-res-current.json');
 var linkifyStr = require('linkifyjs/string');
 
 
@@ -104,7 +104,7 @@ function nodePlacer(layout) {
  */
 function linkifier() {
     // Linkify text in these classes
-    var linkNodes = ['.email', '.portfolio', '.project__link', '.note', '.footer'];
+    var linkNodes = ['.email', '.portfolio', '.project_link', '.note', '.footer'];
 
     linkNodes.forEach(node => {
         let link = document.querySelectorAll(node);
