@@ -367,7 +367,7 @@ PRINT STYLES
   }
 
   header {
-    border-bottom: none;
+    border-bottom: 2rem;
     align-items: center;
   }
 
@@ -398,7 +398,7 @@ PRINT STYLES
     font-size: 2rem;
     line-height: 2rem;
     font-weight: bold;
-    margin: 2.5rem 0 1rem 0;
+    margin: 3.5rem 0 1rem 0;
     border-bottom: 1px solid #555;
   }
 
