@@ -1,0 +1,75 @@
+{
+    "name": "Chris Black",
+  
+    "position": "Web Developer",
+
+    "address": {
+        "street": "916 S. 5th Ave, #1",  
+        "city-state-zip": "Tucson, AZ 85701"
+    },
+
+    "contact": {
+        "phone": "520-269-5118",      
+        "email": "black@chrisblack.net"
+    },
+  
+    "portfolio": "github.com/thischrisblack",
+    
+    "skills": [
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "PHP",
+        "MySQL",
+        "REST API",
+        "Version Control (Git/GitHub)",
+        "HTML",
+        "CSS",
+        "SASS",
+        "CSS Grid",
+        "Flexbox",
+        "Bootstrap",
+        "WordPress"
+    ],
+
+    "footer": "This resume was generated from a JSON file using JavaScript. Code at www.github.com/thischrisblack/Resume-the-Hard-Way.",
+  
+    "selected projects": [
+        {
+            "project__name": "Viral Content",
+            "project__link": "https://github.com/thischrisblack/viral-content",
+            "project__description": "A React-based hostile shopping cart experiment.",
+            "project__skills": ["React", "JavaScript", "Sass", "CSS Grid", "Flexbox", "PhotoShop"]
+        },  
+        {
+            "project__name": "Glengarry Bob Ross",
+            "project__link": "twitter.com/glengarrybob",
+            "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
+            "project__skills": ["JavaScript", "Node.js"]
+        },
+        {
+            "project__name": "Spending Tracker",
+            "project__link": "github.com/thischrisblack/the-food-budget",
+            "project__description": "A Vue.js web app to track spending in user-defined categories.",
+            "project__skills": ["Vue.js", "PHP", "MySQL", "HTML", "CSS", "Sass", "CSS Grid", "JavaScript"]
+        },
+        {
+            "project__name": "Vexations",
+            "project__link": "www.chrisblack.net/vexations",
+            "project__description": "A web app to help you play Erik Satie's \"Vexations\" 840 times in a row on the piano.",
+            "project__skills": ["JavaScript", "HTML", "CSS", "CSS Grid"]
+        },
+        {
+            "project__name": "The Fishpond",
+            "project__link": "github.com/thischrisblack/the-fishpond",
+            "project__description": "A retail contact management tool to track collection activities on overdue musical instrument rental accounts.",
+            "project__skills": ["PHP", "MySQL", "HTML", "CSS", "Bootstrap", "JavaScript"]
+        },
+        {
+            "project__name": "Who Plays Where",
+            "project__link": "http://www.whoplayswhere.com/index-original.php",
+            "project__description": "A live music listing for Tucson. (No longer actively maintained, link above to archived site as it appeared April 5th, 2018.)",
+            "project__skills": ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"]
+        }
+    ]
+}
