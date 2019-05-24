@@ -121,11 +121,11 @@ function linkifier() {
 // Start the whole thing.
 objectHandler(res);
 
-// Set the page title
-document.title = res.name + ' - Resume';
-
 // Place those nodes.
 nodePlacer(layout);
 
 // Linkify the links
 linkifier();
+
+// Set the page title
+document.title = res.name + ' - Resume';
