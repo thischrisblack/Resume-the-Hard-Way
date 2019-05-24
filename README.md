@@ -4,4 +4,6 @@ Takes a simple project-oriented resume in JSON format and lays it out on the pag
 
 Responsive design features a two-column layout for larger screens and a one-column layout for small screens and print (or print-to-PDF).
 
+My own resume is live [here](https://thischrisblack.github.io/Resume-the-Hard-Way/).
+
 ![Screenshot](./src/screenshot.JPG)

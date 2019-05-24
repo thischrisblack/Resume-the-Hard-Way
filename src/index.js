@@ -1,6 +1,5 @@
 import style from "./main.css";
-// This is my resume. A generic starter resume is in src/resume.json
-const res = require('./chrisblack-resume.json');
+const res = require('./resume.json');
 var linkifyStr = require('linkifyjs/string');
 
 
