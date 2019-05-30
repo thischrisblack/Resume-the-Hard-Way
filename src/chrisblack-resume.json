@@ -55,7 +55,7 @@
         },
         {
             "project__name": "Vexations",
-            "project__link": "www.chrisblack.net/vexations",
+            "project__link": "https://thischrisblack.github.io/vexations/",
             "project__description": "A web app to help you play Erik Satie's \"Vexations\" 840 times in a row on the piano.",
             "project__skills": ["JavaScript", "HTML", "CSS", "CSS Grid"]
         },
