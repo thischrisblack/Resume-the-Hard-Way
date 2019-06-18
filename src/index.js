@@ -12,10 +12,8 @@ function objectHandler(object, parent = document.querySelector("body")) {
 
   keys.forEach(key => {
     if (Array.isArray(object[key])) {
-      // Pass object, current key, and parent node.
       arrayHandler(object, key, parent);
     } else {
-      // Pass value of the current key, current key, and parent node.
       nodeAppender(object[key], key, parent);
     }
   });
@@ -49,19 +47,16 @@ function nodeAppender(object, key, parent, type = "div") {
  * @param {element} parent - The parent node of the newly crated <ul> element.
  */
 function arrayHandler(object, key, parent) {
-  // All arrays are made into UL.
   var newList = document.createElement("ul");
   newList.setAttribute("class", key);
   parent.appendChild(newList);
 
-  // Now loop through the array.
   object[key].forEach(el => {
     nodeAppender(el, key, newList, "li");
   });
 }
 
 /**
- * Where do the new nodes go?
  * Newly-created elements of class [0] are to be appended to element [1].
  */
 var layout = [
