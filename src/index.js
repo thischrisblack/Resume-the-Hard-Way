@@ -1,6 +1,6 @@
 import style from "./main.css";
 const resume = require("./resume.json");
-var linkifyStr = require("linkifyjs/string");
+const linkifyStr = require("linkifyjs/string");
 
 /**
  * Route an object or array for further processing.
@@ -12,7 +12,7 @@ function objectHandler(object, parent = document.querySelector("body")) {
 
   keys.forEach(key => {
     if (Array.isArray(object[key])) {
-      arrayHandler(object, key, parent);
+      arrayHandler(object[key], key, parent);
     } else {
       nodeAppender(object[key], key, parent);
     }
@@ -21,37 +21,38 @@ function objectHandler(object, parent = document.querySelector("body")) {
 
 /**
  * Create a new DOM node from a key / value pair, or reroute if value is an object.
- * @param {string|Object|Array} object - The value of the passed key / value pair.
+ * @param {string|Object|Array} element - The value of the passed key / value pair.
  * @param {string} key - The key of the passed key / value pair.
  * @param {element} parent - The parent node of created DOM node.
  * @param {element} [type=div] - The type of created DOM node.
  */
-function nodeAppender(object, key, parent, type = "div") {
-  var newNode = document.createElement(type);
+function nodeAppender(element, key, parent, type = "div") {
+  const newNode = document.createElement(type);
   // Set element's class to the key (e.g. 'name' or 'skill').
   newNode.setAttribute("class", key);
   parent.appendChild(newNode);
-  if (typeof object === "object") {
-    // Objects go back through the top, with the parent updated.
-    objectHandler(object, newNode);
+  if (typeof element === "object") {
+    // Objects recurse, with the parent updated.
+    objectHandler(element, newNode);
   } else {
     // If it's not an object, it's ready to display.
-    newNode.innerHTML = object;
+    newNode.innerHTML = element;
   }
 }
 
 /**
  * Turn arrays into unordered lists.
- * @param {Array} object - The object with the array in it.
- * @param {string} key - The key of the array in the object.
+ * @param {Array} array - The array passed in.
+ * @param {string} key - The key of the array's location in the object of origin.
  * @param {element} parent - The parent node of the newly crated <ul> element.
  */
-function arrayHandler(object, key, parent) {
-  var newList = document.createElement("ul");
+function arrayHandler(array, key, parent) {
+  const newList = document.createElement("ul");
   newList.setAttribute("class", key);
   parent.appendChild(newList);
 
-  object[key].forEach(el => {
+  array.forEach(el => {
+    // Each element is appended as a new <li> node to the parent <ul>
     nodeAppender(el, key, newList, "li");
   });
 }
@@ -59,7 +60,7 @@ function arrayHandler(object, key, parent) {
 /**
  * Newly-created elements of class [0] are to be appended to element [1].
  */
-var layout = [
+const layout = [
   [".name", "name"],
   [".address", "address"],
   [".position", "name"],
@@ -75,9 +76,9 @@ var layout = [
  * @param {Array} layout - An array of class/element pairs.
  */
 function nodePlacer(layout) {
-  layout.forEach(el => {
-    let parent = document.querySelector(el[1]);
-    let child = document.querySelector(el[0]);
+  layout.forEach(layoutPair => {
+    let parent = document.querySelector(layoutPair[1]);
+    let child = document.querySelector(layoutPair[0]);
     // First create section header from each class name.
     nodeAppender(
       child.className,
@@ -85,7 +86,7 @@ function nodePlacer(layout) {
       parent,
       "h1"
     );
-    // Then append further nodes.
+    // Then append the rest of the nodes.
     parent.appendChild(child);
   });
 }
@@ -95,7 +96,7 @@ function nodePlacer(layout) {
  */
 function linkifier() {
   // Linkify text in these classes
-  var linkNodes = [
+  const linkNodes = [
     ".email",
     ".portfolio",
     ".project__link",
@@ -115,11 +116,11 @@ function linkifier() {
 // Start the whole thing.
 objectHandler(resume);
 
-// Place those nodes.
+// Place the fresh nodes in the layout.
 nodePlacer(layout);
 
 // Linkify the links
 linkifier();
 
 // Set the page title
-document.title = res.name + " - Resume";
+document.title = resume.name + " - Resume";
