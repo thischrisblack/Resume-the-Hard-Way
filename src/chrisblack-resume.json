@@ -13,7 +13,7 @@
     "email": "black@chrisblack.net"
   },
 
-  "portfolio": "github.com/thischrisblack",
+  "portfolio": "chrisblack.net/code",
 
   "skills": [
     "JavaScript",
@@ -21,38 +21,26 @@
     "Vue.js",
     "PHP",
     "MySQL",
+    "Firebase",
     "REST API",
+    "WordPress",
     "Version Control (Git/GitHub)",
     "HTML",
     "CSS",
     "SASS",
     "CSS Grid",
     "Flexbox",
-    "Bootstrap",
-    "WordPress"
+    "Bootstrap"
   ],
 
   "footer": "This resume was generated from a JSON file using JavaScript. Code at www.github.com/thischrisblack/Resume-the-Hard-Way.",
 
   "selected projects": [
     {
-      "project__name": "Viral Content",
-      "project__link": "github.com/thischrisblack/viral-content",
-      "project__description": "A React-based hostile shopping cart experiment.",
-      "project__skills": [
-        "React",
-        "JavaScript",
-        "Sass",
-        "CSS Grid",
-        "Flexbox",
-        "PhotoShop"
-      ]
-    },
-    {
-      "project__name": "Glengarry Bob Ross",
-      "project__link": "twitter.com/glengarrybob",
-      "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
-      "project__skills": ["JavaScript", "Node.js"]
+      "project__name": "Transmitter",
+      "project__link": "github.com/thischrisblack/transmitter",
+      "project__description": "An austere custom CMS built on React and Firebase, complete with blog, custom music player, and code portfolio.",
+      "project__skills": ["React", "JavaScript", "Firebase", "Sass", "CSS Grid"]
     },
     {
       "project__name": "The Fishpond",
@@ -65,6 +53,25 @@
         "CSS",
         "Bootstrap",
         "JavaScript"
+      ]
+    },
+    {
+      "project__name": "Glengarry Bob Ross",
+      "project__link": "twitter.com/glengarrybob",
+      "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
+      "project__skills": ["JavaScript", "Node.js"]
+    },
+    {
+      "project__name": "Viral Content",
+      "project__link": "github.com/thischrisblack/viral-content",
+      "project__description": "A React-based hostile shopping cart experiment.",
+      "project__skills": [
+        "React",
+        "JavaScript",
+        "Sass",
+        "CSS Grid",
+        "Flexbox",
+        "PhotoShop"
       ]
     },
     {
@@ -86,21 +93,8 @@
     {
       "project__name": "Vexations",
       "project__link": "github.com/thischrisblack/vexations",
-      "project__description": "A web app to help you play Erik Satie's \"Vexations\" 840 times in a row on the piano.",
+      "project__description": "A vanilla JavaScript web app to help you play Erik Satie's \"Vexations\" 840 times in a row on the piano.",
       "project__skills": ["JavaScript", "HTML", "CSS", "CSS Grid"]
-    },
-    {
-      "project__name": "Who Plays Where",
-      "project__link": "www.whoplayswhere.com/index-original.php",
-      "project__description": "A live music listing for Tucson. (No longer actively maintained, link above to archived site as it appeared April 5th, 2018.)",
-      "project__skills": [
-        "PHP",
-        "MySQL",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Bootstrap"
-      ]
     }
   ]
 }
