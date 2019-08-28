@@ -65,6 +65,7 @@ const layout = [
   [".address", "address"],
   [".position", "name"],
   [".contact", "contact"],
+  [".experience", "main"],
   [".projects", "main"],
   [".portfolio", "aside"],
   [".skills", "aside"],

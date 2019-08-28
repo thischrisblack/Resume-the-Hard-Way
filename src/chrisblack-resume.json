@@ -35,6 +35,21 @@
 
   "footer": "This resume was generated from a JSON file using JavaScript. Code at www.github.com/thischrisblack/Resume-the-Hard-Way.",
 
+  "professional experience": [
+    {
+      "project__name": "OpenForm",
+      "project__date": "2019 - present",
+      "project__link": "www.openform.co",
+      "project__description": "As a contractor, I perform custom WordPress theme development."
+    },
+    {
+      "project__name": "Chicago Music Store",
+      "project__date": "2008 - present",
+      "project__link": "www.chicagomusicstore.com",
+      "project__description": "I created and maintain company WordPress site, and develop tools to assist customers and staff in common tasks."
+    }
+  ],
+
   "selected projects": [
     {
       "project__name": "Transmitter",
@@ -72,22 +87,6 @@
         "CSS Grid",
         "Flexbox",
         "PhotoShop"
-      ]
-    },
-    {
-      "project__name": "Spending Tracker",
-      "project__link": "github.com/thischrisblack/the-food-budget",
-      "project__description": "A Vue.js web app to track spending in user-defined categories.",
-      "project__skills": [
-        "Vue.js",
-        "PHP",
-        "MySQL",
-        "HTML",
-        "CSS",
-        "Sass",
-        "CSS Grid",
-        "JavaScript",
-        "REST API"
       ]
     },
     {
