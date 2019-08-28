@@ -77,16 +77,19 @@
       "project__skills": ["JavaScript", "Node.js"]
     },
     {
-      "project__name": "Viral Content",
-      "project__link": "github.com/thischrisblack/viral-content",
-      "project__description": "A React-based hostile shopping cart experiment.",
+      "project__name": "Spending Tracker",
+      "project__link": "github.com/thischrisblack/the-food-budget",
+      "project__description": "A Vue.js web app to track spending in user-defined categories, with a PHP/MySQL API on the back.",
       "project__skills": [
-        "React",
-        "JavaScript",
+        "Vue.js",
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
         "Sass",
         "CSS Grid",
-        "Flexbox",
-        "PhotoShop"
+        "JavaScript",
+        "REST API"
       ]
     },
     {
