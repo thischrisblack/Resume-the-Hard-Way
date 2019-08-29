@@ -46,7 +46,7 @@
       "project__name": "Chicago Music Store",
       "project__date": "2008 - present",
       "project__link": "www.chicagomusicstore.com",
-      "project__description": "I created and maintain company WordPress site, and develop tools to assist customers and staff in common tasks."
+      "project__description": "I maintain the company website and develop web applications and tools, both public and in-house."
     }
   ],
 
@@ -71,15 +71,9 @@
       ]
     },
     {
-      "project__name": "Glengarry Bob Ross",
-      "project__link": "twitter.com/glengarrybob",
-      "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
-      "project__skills": ["JavaScript", "Node.js"]
-    },
-    {
       "project__name": "Spending Tracker",
       "project__link": "github.com/thischrisblack/the-food-budget",
-      "project__description": "A Vue.js web app to track spending in user-defined categories, with a PHP/MySQL API on the back.",
+      "project__description": "A Vue.js web app to track spending in user-defined categories, with a PHP/MySQL API on the backend.",
       "project__skills": [
         "Vue.js",
         "PHP",
@@ -93,10 +87,23 @@
       ]
     },
     {
-      "project__name": "Vexations",
-      "project__link": "github.com/thischrisblack/vexations",
-      "project__description": "A vanilla JavaScript web app to help you play Erik Satie's \"Vexations\" 840 times in a row on the piano.",
-      "project__skills": ["JavaScript", "HTML", "CSS", "CSS Grid"]
+      "project__name": "Glengarry Bob Ross",
+      "project__link": "twitter.com/glengarrybob",
+      "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
+      "project__skills": ["JavaScript", "Node.js"]
+    },
+    {
+      "project__name": "Who Plays Where",
+      "project__link": "http://www.whoplayswhere.com/index-original.php",
+      "project__description": "A live music listing for Tucson. (No longer actively maintained, link above to archived site as it appeared April 5th, 2018.)",
+      "project__skills": [
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ]
     }
   ]
 }
