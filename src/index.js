@@ -1,5 +1,5 @@
 import style from "./main.css";
-const resume = require("./resume.json");
+const resume = require("./chrisblack-resume.json");
 const linkifyStr = require("linkifyjs/string");
 
 /**
@@ -30,6 +30,10 @@ function nodeAppender(element, key, parent, type = "div") {
   const newNode = document.createElement(type);
   // Set element's class to the key (e.g. 'name' or 'skill').
   newNode.setAttribute("class", key);
+  // If it's a list item, add hider class.
+  if (type === "li") {
+    newNode.classList.add("hider");
+  }
   parent.appendChild(newNode);
   if (typeof element === "object") {
     // Objects recurse, with the parent updated.
@@ -114,6 +118,23 @@ function linkifier() {
   });
 }
 
+/**
+ * Make projects or skills hide-able by clicking on them.
+ */
+function enableHideableNodes() {
+  let hideableNodes = document.querySelectorAll(".hider");
+  hideableNodes.forEach(node => {
+    node.addEventListener("click", e => {
+      // If it's an <li>, hide it, if not, hide its parent.
+      if (e.target.nodeName === "LI") {
+        e.target.style.display = "none";
+      } else {
+        e.target.parentNode.style.display = "none";
+      }
+    });
+  });
+}
+
 // Start the whole thing.
 objectHandler(resume);
 
@@ -122,6 +143,14 @@ nodePlacer(layout);
 
 // Linkify the links
 linkifier();
+
+/**
+ * Add hide-able node event listeners.
+ * Use ONLY when you're working on your resume *locally* for printing or saving.
+ * DO NOT enable this for web deployment, or else your nodes will disappear
+ * when people click on the links, etc.
+ */
+// enableHideableNodes();
 
 // Set the page title
 document.title = resume.name + " - Resume";

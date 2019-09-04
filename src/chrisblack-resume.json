@@ -71,6 +71,12 @@
       ]
     },
     {
+      "project__name": "Glengarry Bob Ross",
+      "project__link": "twitter.com/glengarrybob",
+      "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
+      "project__skills": ["JavaScript", "Node.js"]
+    },
+    {
       "project__name": "Spending Tracker",
       "project__link": "github.com/thischrisblack/the-food-budget",
       "project__description": "A Vue.js web app to track spending in user-defined categories, with a PHP/MySQL API on the backend.",
@@ -87,10 +93,23 @@
       ]
     },
     {
-      "project__name": "Glengarry Bob Ross",
-      "project__link": "twitter.com/glengarrybob",
-      "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
-      "project__skills": ["JavaScript", "Node.js"]
+      "project__name": "Viral Content",
+      "project__link": "https://github.com/thischrisblack/viral-content",
+      "project__description": "A React-based hostile shopping cart experiment.",
+      "project__skills": [
+        "React",
+        "JavaScript",
+        "Sass",
+        "CSS Grid",
+        "Flexbox",
+        "PhotoShop"
+      ]
+    },
+    {
+      "project__name": "Vexations",
+      "project__link": "www.chrisblack.net/vexations",
+      "project__description": "A web app to help you play Erik Satie's \"Vexations\" 840 times in a row on the piano.",
+      "project__skills": ["JavaScript", "HTML", "CSS", "CSS Grid"]
     },
     {
       "project__name": "Who Plays Where",
