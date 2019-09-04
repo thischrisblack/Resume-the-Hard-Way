@@ -1,5 +1,5 @@
 import style from "./main.css";
-const resume = require("./chrisblack-resume.json");
+const resume = require("./resume.json");
 const linkifyStr = require("linkifyjs/string");
 
 /**
