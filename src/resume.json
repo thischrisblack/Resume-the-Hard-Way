@@ -1,71 +1,78 @@
 {
-  "name": "Jane Doe",
+    "name": "Jane Doe",
 
-  "position": "Web Developer",
+    "position": "Web Developer",
 
-  "address": {
-    "street": "123 E. Main St",
-    "city-state-zip": "Anytown, KY 45875"
-  },
-
-  "contact": {
-    "phone": "555-555-5555",
-    "email": "you@example.com"
-  },
-
-  "portfolio": "www.example.com",
-
-  "skills": [
-    "HTML5",
-    "CSS3",
-    "JavaScript (ES6)",
-    "PHP 7",
-    "MySQL",
-    "Bootstrap",
-    "WordPress"
-  ],
-
-  "footer": "Any note you like here. It will go in the footer.",
-
-  "professional experience": [
-    {
-      "project__name": "A Good Company",
-      "project__date": "2019 - present",
-      "project__link": "www.example.com",
-      "project__description": "I performed thus and such work."
+    "address": {
+        "street": "123 E. Main St",
+        "city-state-zip": "Anytown, KY 45875"
     },
-    {
-      "project__name": "ANother Good Company",
-      "project__date": "2015 - 2018",
-      "project__link": "www.example.com",
-      "project__description": "I did many sorts of work here."
-    }
-  ],
 
-  "projects": [
-    {
-      "project__name": "Big Web Project",
-      "project__link": "www.example.com",
-      "project__description": "Description of big web project",
-      "project__skills": ["HTML", "CSS", "PHP", "MySQL", "WordPress"]
+    "contact": {
+        "phone": "555-555-5555",
+        "email": "you@example.com"
     },
-    {
-      "project__name": "Another Awesome Project",
-      "project__link": "www.example.com",
-      "project__description": "This project was so awesome.",
-      "project__skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript"]
-    },
-    {
-      "project__name": "Incredible Project",
-      "project__link": "www.example.com",
-      "project__description": "Such a good project you cannot imagine.",
-      "project__skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "W3CSS"]
-    },
-    {
-      "project__name": "Another one",
-      "project__link": "www.example.com",
-      "project__description": "You get the idea.",
-      "project__skills": ["WordPress"]
-    }
-  ]
+
+    "portfolio": "www.example.com",
+
+    "skills": [
+        "HTML5",
+        "CSS3",
+        "JavaScript (ES6)",
+        "PHP 7",
+        "MySQL",
+        "Bootstrap",
+        "WordPress"
+    ],
+
+    "footer": "Any note you like here. It will go in the footer.",
+
+    "professional experience": [
+        {
+            "project__name": "A Good Company",
+            "project__date": "2019 - present",
+            "project__link": "www.example.com",
+            "project__description": "I performed thus and such work."
+        },
+        {
+            "project__name": "ANother Good Company",
+            "project__date": "2015 - 2018",
+            "project__link": "www.example.com",
+            "project__description": "I did many sorts of work here."
+        }
+    ],
+
+    "projects": [
+        {
+            "project__name": "Big Web Project",
+            "project__link": "www.example.com",
+            "project__description": "Description of big web project",
+            "project__skills": ["HTML", "CSS", "PHP", "MySQL", "WordPress"]
+        },
+        {
+            "project__name": "Another Awesome Project",
+            "project__link": "www.example.com",
+            "project__description": "This project was so awesome.",
+            "project__skills": ["HTML", "CSS", "PHP", "MySQL", "JavaScript"]
+        },
+        {
+            "project__name": "Incredible Project",
+            "project__link": "www.example.com",
+            "project__description": "Such a good project you cannot imagine.",
+            "project__skills": [
+                "HTML",
+                "CSS",
+                "PHP",
+                "MySQL",
+                "JavaScript",
+                "W3CSS"
+            ]
+        },
+        {
+            "project__name": "Another one",
+            "project__link": "www.example.com",
+            "project__description": "You get the idea.",
+            "project__skills": ["WordPress"]
+        }
+    ]
 }

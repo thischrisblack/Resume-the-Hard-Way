@@ -1,128 +1,116 @@
 {
-  "name": "Chris Black",
+    "name": "Chris Black",
 
-  "position": "Web Developer",
+    "position": "Software Developer",
 
-  "address": {
-    "street": "916 S. 5th Ave, #1",
-    "city-state-zip": "Tucson, AZ 85701"
-  },
-
-  "contact": {
-    "phone": "520-269-5118",
-    "email": "black@chrisblack.net"
-  },
-
-  "portfolio": "chrisblack.net/code",
-
-  "skills": [
-    "JavaScript",
-    "React",
-    "Vue.js",
-    "PHP",
-    "MySQL",
-    "Firebase",
-    "REST API",
-    "WordPress",
-    "Version Control (Git/GitHub)",
-    "HTML",
-    "CSS",
-    "SASS",
-    "CSS Grid",
-    "Flexbox",
-    "Bootstrap"
-  ],
-
-  "footer": "This resume was generated from a JSON file using JavaScript. Code at www.github.com/thischrisblack/Resume-the-Hard-Way.",
-
-  "professional experience": [
-    {
-      "project__name": "OpenForm",
-      "project__date": "2019 - present",
-      "project__link": "www.openform.co",
-      "project__description": "As a contractor, I perform custom WordPress theme development."
+    "address": {
+        "street": "520 Rose Ln",
+        "city-state-zip": "Raleigh, NC 27610"
     },
-    {
-      "project__name": "Chicago Music Store",
-      "project__date": "2008 - present",
-      "project__link": "www.chicagomusicstore.com",
-      "project__description": "I maintain the company website and develop web applications and tools, both public and in-house."
-    }
-  ],
 
-  "selected projects": [
-    {
-      "project__name": "Transmitter",
-      "project__link": "github.com/thischrisblack/transmitter",
-      "project__description": "An austere custom CMS built on React and Firebase, complete with blog, custom music player, and code portfolio.",
-      "project__skills": ["React", "JavaScript", "Firebase", "Sass", "CSS Grid"]
+    "contact": {
+        "phone": "520-269-5118",
+        "email": "black@chrisblack.net"
     },
-    {
-      "project__name": "The Fishpond",
-      "project__link": "github.com/thischrisblack/the-fishpond",
-      "project__description": "A retail contact management tool to track collection activities on overdue musical instrument rental accounts.",
-      "project__skills": [
-        "PHP",
-        "MySQL",
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "JavaScript"
-      ]
-    },
-    {
-      "project__name": "Glengarry Bob Ross",
-      "project__link": "twitter.com/glengarrybob",
-      "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
-      "project__skills": ["JavaScript", "Node.js"]
-    },
-    {
-      "project__name": "Spending Tracker",
-      "project__link": "github.com/thischrisblack/the-food-budget",
-      "project__description": "A Vue.js web app to track spending in user-defined categories, with a PHP/MySQL API on the backend.",
-      "project__skills": [
-        "Vue.js",
-        "PHP",
-        "MySQL",
-        "HTML",
-        "CSS",
-        "Sass",
-        "CSS Grid",
+
+    "portfolio": "chrisblack.net/code",
+
+    "skills": [
         "JavaScript",
-        "REST API"
-      ]
-    },
-    {
-      "project__name": "Viral Content",
-      "project__link": "https://github.com/thischrisblack/viral-content",
-      "project__description": "A React-based hostile shopping cart experiment.",
-      "project__skills": [
+        "TypeScript",
+        "Aurelia",
         "React",
-        "JavaScript",
-        "Sass",
+        "Vue.js",
+        "Gatsby",
+        "Node.js",
+        "SQL",
+        "Firebase",
+        "Version Control",
+        "HTML",
+        "CSS",
+        "SASS",
         "CSS Grid",
         "Flexbox",
-        "PhotoShop"
-      ]
-    },
-    {
-      "project__name": "Vexations",
-      "project__link": "www.chrisblack.net/vexations",
-      "project__description": "A web app to help you play Erik Satie's \"Vexations\" 840 times in a row on the piano.",
-      "project__skills": ["JavaScript", "HTML", "CSS", "CSS Grid"]
-    },
-    {
-      "project__name": "Who Plays Where",
-      "project__link": "http://www.whoplayswhere.com/index-original.php",
-      "project__description": "A live music listing for Tucson. (No longer actively maintained, link above to archived site as it appeared April 5th, 2018.)",
-      "project__skills": [
-        "PHP",
-        "MySQL",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Bootstrap"
-      ]
-    }
-  ]
+        "PHP (a little)"
+    ],
+
+    "footer": "This resume was generated from a JSON file using JavaScript. Code at www.github.com/thischrisblack/Resume-the-Hard-Way.",
+
+    "professional experience": [
+        {
+            "project__name": "American Board of Radiology",
+            "project__date": "2019 - Present",
+            "project__link": "www.theabr.org",
+            "project__description": "Full stack development of a variety of web apps used in the certification testing process for radiologists.",
+            "project__skills": [
+                "TypeScript",
+                "Node.js",
+                "Aurelia",
+                "SQL",
+                "HTML",
+                "CSS",
+                "Tailwind CSS Library"
+            ]
+        },
+        {
+            "project__name": "OpenForm",
+            "project__date": "2019",
+            "project__link": "www.openform.co",
+            "project__description": "As a contractor, I performed custom WordPress theme development."
+        },
+        {
+            "project__name": "Chicago Music Store",
+            "project__date": "2008 - 2019",
+            "project__link": "www.chicagomusicstore.com",
+            "project__description": "I maintained the company website and developed web applications and tools, both public and in-house.",
+            "project__skills": ["PHP", "Wordpress", "HTML", "CSS", "JavaScript"]
+        }
+    ],
+
+    "selected projects": [
+        {
+            "project__name": "Transmitter",
+            "project__link": "github.com/thischrisblack/transmitter-gatsby",
+            "project__description": "An austere custom CMS built on React and Firebase, complete with blog, custom music player, and code portfolio.",
+            "project__skills": [
+                "JavaScript",
+                "React",
+                "Gatsby",
+                "Firebase",
+                "Sass",
+                "CSS Grid"
+            ]
+        },
+        {
+            "project__name": "Tailwind Config Spectrum",
+            "project__link": "github.com/thischrisblack/tailwind-config-spectrum",
+            "project__description": "A quick custom color reference for Tailwind CSS development.",
+            "project__skills": ["JavaScript", "HTML", "CSS", "Tailwind CSS"]
+        },
+        {
+            "project__name": "Emoji Disco",
+            "project__link": "github.com/thischrisblack/emoji-disco",
+            "project__description": "My first of likely many experiments with the Web Audio API.",
+            "project__skills": ["JavaScript", "HTML", "CSS", "Web Audio API"]
+        },
+        {
+            "project__name": "Glengarry Bob Ross",
+            "project__link": "twitter.com/glengarrybob",
+            "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
+            "project__skills": ["JavaScript", "Node.js"]
+        },
+        {
+            "project__name": "The Fishpond",
+            "project__link": "github.com/thischrisblack/the-fishpond",
+            "project__description": "A retail contact management tool to track collection activities on overdue musical instrument rental accounts.",
+            "project__skills": [
+                "PHP",
+                "MySQL",
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript"
+            ]
+        }
+    ]
 }
