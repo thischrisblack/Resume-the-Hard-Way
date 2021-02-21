@@ -27,39 +27,22 @@
 
     "footer": "Any note you like here. It will go in the footer.",
 
-<<<<<<< HEAD
     "professional experience": [
         {
-            "project__name": "A Good Company",
-            "project__date": "2019 - present",
-            "project__link": "www.example.com",
-            "project__description": "I performed thus and such work."
+        "project__name": "A Good Company",
+        "project__date": "2019 - present",
+        "project__link": "www.example.com",
+        "project__description": "I performed thus and such work."
         },
         {
-            "project__name": "ANother Good Company",
-            "project__date": "2015 - 2018",
-            "project__link": "www.example.com",
-            "project__description": "I did many sorts of work here."
+        "project__name": "Another Good Company",
+        "project__date": "2015 - 2018",
+        "project__link": "www.example.com",
+        "project__description": "I did many sorts of work here."
         }
     ],
-=======
-  "professional experience": [
-    {
-      "project__name": "A Good Company",
-      "project__date": "2019 - present",
-      "project__link": "www.example.com",
-      "project__description": "I performed thus and such work."
-    },
-    {
-      "project__name": "Another Good Company",
-      "project__date": "2015 - 2018",
-      "project__link": "www.example.com",
-      "project__description": "I did many sorts of work here."
-    }
-  ],
->>>>>>> 513f234cdc7226979a1cb2f077b41e14ed81d051
 
-    "projects": [
+    "selected projects": [
         {
             "project__name": "Big Web Project",
             "project__link": "www.example.com",

@@ -13,25 +13,21 @@
         "email": "black@chrisblack.net"
     },
 
-    "portfolio": "chrisblack.net/code",
+    "portfolio": "chrisblack.net",
 
     "skills": [
         "JavaScript",
         "TypeScript",
         "Aurelia",
         "React",
-        "Vue.js",
         "Gatsby",
+        "Next.js",
         "Node.js",
         "SQL",
         "Firebase",
-        "Version Control",
         "HTML",
-        "CSS",
-        "SASS",
-        "CSS Grid",
-        "Flexbox",
-        "PHP (a little)"
+        "CSS/SASS",
+        "PHP"
     ],
 
     "footer": "This resume was generated from a JSON file using JavaScript. Code at www.github.com/thischrisblack/Resume-the-Hard-Way.",
@@ -41,7 +37,7 @@
             "project__name": "American Board of Radiology",
             "project__date": "2019 - Present",
             "project__link": "www.theabr.org",
-            "project__description": "Full stack development of a variety of web apps used in the certification testing process for radiologists.",
+            "project__description": "The ABR is one of 24 medical boards in the United States tasked with setting professional standards for medical specialty practice and certification. As a full-stack software developer, I work closely with dev teammates, stakeholders, users, and vendors developing tools in support of the ABR's mission, serving in-house staff, organization volunteers, and radiologists at large. Our recent focus: enabling reliable and secure certification testing on an all-remote platform, due to Covid-19.",
             "project__skills": [
                 "TypeScript",
                 "Node.js",
@@ -56,41 +52,35 @@
             "project__name": "OpenForm",
             "project__date": "2019",
             "project__link": "www.openform.co",
-            "project__description": "As a contractor, I performed custom WordPress theme development."
+            "project__description": "As a contractor serving an award winning strategy and design studio, I performed custom WordPress theme development.",
+            "project__skills": [
+                "PHP",
+                "WordPress",
+                "Gutenberg",
+                "HTML",
+                "CSS"
+            ]
         },
         {
             "project__name": "Chicago Music Store",
             "project__date": "2008 - 2019",
             "project__link": "www.chicagomusicstore.com",
-            "project__description": "I maintained the company website and developed web applications and tools, both public and in-house.",
-            "project__skills": ["PHP", "Wordpress", "HTML", "CSS", "JavaScript"]
+            "project__description": "As a part of a 100 year-old family business, I wore many hats, including sheet music buyer, account manager, and 'general web guy.' In the latter role, I maintained the company website and developed custom web applications and tools, both public and in-house. These tools helped customers reserve rental instruments, and helped staff coordinate events and manage delinquent account collection.",
+            "project__skills": ["PHP", "Wordpress", "HTML", "CSS", "JavaScript", "MySQL"]
         }
     ],
 
     "selected projects": [
         {
-            "project__name": "Transmitter",
-            "project__link": "github.com/thischrisblack/transmitter-gatsby",
-            "project__description": "An austere custom CMS built on React and Firebase, complete with blog, custom music player, and code portfolio.",
-            "project__skills": [
-                "JavaScript",
-                "React",
-                "Gatsby",
-                "Firebase",
-                "Sass",
-                "CSS Grid"
-            ]
-        },
-        {
-            "project__name": "Tailwind Config Spectrum",
-            "project__link": "github.com/thischrisblack/tailwind-config-spectrum",
-            "project__description": "A quick custom color reference for Tailwind CSS development.",
-            "project__skills": ["JavaScript", "HTML", "CSS", "Tailwind CSS"]
+            "project__name": "Shelly Black's Website",
+            "project__link": "github.com/thischrisblack/shelly-black-website",
+            "project__description": "A blog for archivist/photographer Shelly Black, built on React with Next.js and deployed with Netlify.",
+            "project__skills": ["React", "Next.js", "Netlify"]
         },
         {
             "project__name": "Emoji Disco",
             "project__link": "github.com/thischrisblack/emoji-disco",
-            "project__description": "My first of likely many experiments with the Web Audio API.",
+            "project__description": "My first of likely many experiments with the Web Audio API. Upload a music file to get the party started.",
             "project__skills": ["JavaScript", "HTML", "CSS", "Web Audio API"]
         },
         {
@@ -98,19 +88,6 @@
             "project__link": "twitter.com/glengarrybob",
             "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
             "project__skills": ["JavaScript", "Node.js"]
-        },
-        {
-            "project__name": "The Fishpond",
-            "project__link": "github.com/thischrisblack/the-fishpond",
-            "project__description": "A retail contact management tool to track collection activities on overdue musical instrument rental accounts.",
-            "project__skills": [
-                "PHP",
-                "MySQL",
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript"
-            ]
         }
     ]
 }
