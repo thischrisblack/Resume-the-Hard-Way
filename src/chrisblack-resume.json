@@ -24,10 +24,9 @@
         "Next.js",
         "Node.js",
         "SQL",
-        "Firebase",
+        "NoSQL",
         "HTML",
-        "CSS/SASS",
-        "PHP"
+        "CSS"
     ],
 
     "footer": "This resume was generated from a JSON file using JavaScript. Code at www.github.com/thischrisblack/Resume-the-Hard-Way.",
@@ -37,7 +36,7 @@
             "project__name": "American Board of Radiology",
             "project__date": "2019 - Present",
             "project__link": "www.theabr.org",
-            "project__description": "The ABR is one of 24 medical boards in the United States tasked with setting professional standards for medical specialty practice and certification. As a full-stack software developer, I work closely with dev teammates, stakeholders, users, and vendors developing tools in support of the ABR's mission, serving in-house staff, organization volunteers, and radiologists at large. Our recent focus: enabling reliable and secure certification testing on an all-remote platform, due to Covid-19.",
+            "project__description": "The ABR is one of 24 medical boards in the United States. As a full-stack software developer, I support the ABR's certification processes. Our recent focus: moving normally on-site activities to fully-remote platforms due to Covid-19.",
             "project__skills": [
                 "TypeScript",
                 "Node.js",
@@ -52,7 +51,7 @@
             "project__name": "OpenForm",
             "project__date": "2019",
             "project__link": "www.openform.co",
-            "project__description": "As a contractor serving an award winning strategy and design studio, I performed custom WordPress theme development.",
+            "project__description": "As a contractor serving an award winning strategy and design studio, I performed custom WordPress theme development, specifically exploring the newer Gutenberg capabilities.",
             "project__skills": [
                 "PHP",
                 "WordPress",
@@ -65,7 +64,7 @@
             "project__name": "Chicago Music Store",
             "project__date": "2008 - 2019",
             "project__link": "www.chicagomusicstore.com",
-            "project__description": "As a part of a 100 year-old family business, I wore many hats, including sheet music buyer, account manager, and 'general web guy.' In the latter role, I maintained the company website and developed custom web applications and tools, both public and in-house. These tools helped customers reserve rental instruments, and helped staff coordinate events and manage delinquent account collection.",
+            "project__description": "I maintained the company website and developed custom web applications and tools, both public and in-house. These tools helped customers reserve rental instruments, and staff coordinate events and manage delinquent accounts.",
             "project__skills": ["PHP", "Wordpress", "HTML", "CSS", "JavaScript", "MySQL"]
         }
     ],
@@ -75,7 +74,13 @@
             "project__name": "Shelly Black's Website",
             "project__link": "github.com/thischrisblack/shelly-black-website",
             "project__description": "A blog for archivist/photographer Shelly Black, built on React with Next.js and deployed with Netlify.",
-            "project__skills": ["React", "Next.js", "Netlify"]
+            "project__skills": ["React", "TypeScript", "Next.js", "Netlify"]
+        },
+        {
+            "project__name": "Transmitter",
+            "project__link": "github.com/thischrisblack/transmitter-gatsby",
+            "project__description": "A previous version of my personal site, featuring a custom CMS and music player allowing users to sort tracks by mood.",
+            "project__skills": ["React", "Gatsby", "Firebase", "NoSQL"]
         },
         {
             "project__name": "Emoji Disco",
@@ -87,7 +92,7 @@
             "project__name": "Glengarry Bob Ross",
             "project__link": "twitter.com/glengarrybob",
             "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
-            "project__skills": ["JavaScript", "Node.js"]
+            "project__skills": ["JavaScript", "Node.js", "Heroku", "JIMP"]
         }
     ]
 }
