@@ -248,6 +248,16 @@ ul.experience li {
     margin: 0.4rem 0;
 }
 
+ul.project__accomplishments {
+    list-style: circle;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+}
+
+li.project__accomplishments {
+    margin: 0.65rem 0 !important;
+}
+
 ul.project__skills {
     padding-left: 0;
     font-family: 'IBM Plex Mono', monospace;
@@ -389,7 +399,7 @@ PRINT STYLES
 
     ul.projects li,
     ul.experience li {
-        margin: 1.2rem 0;
+        margin: 2rem 0;
     }
 
     .section-header {

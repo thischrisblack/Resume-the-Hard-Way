@@ -30,8 +30,8 @@ function nodeAppender(element, key, parent, type = 'div') {
     const newNode = document.createElement(type);
     // Set element's class to the key (e.g. 'name' or 'skill').
     newNode.setAttribute('class', key);
-    // If it's a list item, add hider class.
-    if (type === 'li') {
+    // If it's a list item or H1, add hider class.
+    if (type === 'li' || type === 'h1') {
         newNode.classList.add('hider');
     }
     parent.appendChild(newNode);
@@ -126,7 +126,7 @@ function enableHideableNodes() {
     hideableNodes.forEach((node) => {
         node.addEventListener('click', (e) => {
             // If it's an <li>, hide it, if not, hide its parent.
-            if (e.target.nodeName === 'LI') {
+            if (e.target.nodeName === 'LI' || e.target.nodeName === 'H1') {
                 e.target.style.display = 'none';
             } else {
                 e.target.parentNode.style.display = 'none';

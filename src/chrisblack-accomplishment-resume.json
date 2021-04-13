@@ -1,0 +1,111 @@
+{
+    "name": "Chris Black",
+
+    "position": "Software Developer",
+
+    "address": {
+        "street": "520 Rose Ln",
+        "city-state-zip": "Raleigh, NC 27610"
+    },
+
+    "contact": {
+        "phone": "520-269-5118",
+        "email": "black@chrisblack.net"
+    },
+
+    "portfolio": "chrisblack.net",
+
+    "skills": [
+        "JavaScript",
+        "TypeScript",
+        "Aurelia",
+        "React",
+        "Vue.js",
+        "Gatsby",
+        "Next.js",
+        "Node.js",
+        "SQL",
+        "NoSQL",
+        "Firebase",
+        "HTML",
+        "CSS",
+        "PHP"
+    ],
+
+    "footer": "This resume was generated from a JSON file using JavaScript. Code at www.github.com/thischrisblack/Resume-the-Hard-Way.",
+
+    "professional experience": [
+        {
+            "project__name": "American Board of Radiology",
+            "project__date": "2019 - Present",
+            "project__link": "www.theabr.org",
+            "project__description": "The ABR is one of 24 medical boards in the United States. As a full-stack software developer, I have been primarily responsible for RADS, an exam-creation application meant to serve 16,000 volunteers and the committees that oversee their efforts.",
+            "project__accomplishments": [
+                "From mockups or written requirements, I built feature components and full workflows for numerous organizational roles, working with equal comfort in the API and UI.", 
+                "These workflows included exam question creation, image upload and in-browser editing, and tracking the progress of proposed exam material from its creation through a multi-phase, multi-role approval process.",
+                "I initiated a major refactoring session to reduce the complexity of the flux store, trim bloated API responses, and eliminate dead code. This resulted in 81 insertions, 2436 deletions, and a much more maintainable codebase."
+            ],
+            "project__skills": [
+                "TypeScript",
+                "Node.js",
+                "Aurelia",
+                "SQL",
+                "HTML",
+                "CSS",
+                "Tailwind CSS Library"
+            ]
+        },
+        {
+            "project__name": "OpenForm",
+            "project__date": "2019",
+            "project__link": "www.openform.co",
+            "project__description": "As a contractor for an award winning strategy and design studio, I performed custom WordPress theme development.",
+            "project__skills": [
+                "PHP",
+                "WordPress",
+                "Gutenberg",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "project__name": "Chicago Music Store",
+            "project__date": "2008 - 2019",
+            "project__link": "www.chicagomusicstore.com",
+            "project__description": "I maintained the company website and developed custom web applications and tools, including:",
+            "project__accomplishments": [
+                "A custom portal for customers to reserve rental instruments online.",
+                "An in-house application to assist staff in managing delinquent accounts. See \"the-fishpond\" on my GitHub page.",
+                "Numerous other in-house tools, including apps to plan public events and to place and track sheet music orders."
+            ],
+            "project__skills": ["PHP", "Wordpress", "HTML", "CSS", "JavaScript", "MySQL"]
+        }
+    ],
+
+    "selected projects": [
+        {
+            "project__name": "Shelly Black's Website",
+            "project__link": "github.com/thischrisblack/shelly-black-website",
+            "project__description": "A blog for archivist/photographer Shelly Black, built on React with Next.js and deployed with Netlify.",
+            "project__skills": ["React", "TypeScript", "Next.js", "Netlify"]
+        },
+        {
+            "project__name": "Transmitter",
+            "project__link": "github.com/thischrisblack/transmitter-gatsby",
+            "project__description": "A previous version of my personal site, featuring a custom CMS and music player allowing users to sort tracks by mood.",
+            "project__skills": ["React", "Gatsby", "Firebase", "NoSQL"]
+        },
+        {
+            "project__name": "Emoji Disco",
+            "project__link": "github.com/thischrisblack/emoji-disco",
+            "project__description": "My first of likely many experiments with the Web Audio API. Upload a music file to get the party started.",
+            "project__skills": ["JavaScript", "HTML", "CSS", "Web Audio API"]
+        },
+        {
+            "project__name": "Glengarry Bob Ross",
+            "project__link": "twitter.com/glengarrybob",
+            "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
+            "project__skills": ["JavaScript", "Node.js", "Heroku", "JIMP"]
+        }
+    ]
+}
