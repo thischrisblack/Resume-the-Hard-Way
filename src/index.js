@@ -1,3 +1,4 @@
+import style from './main.css';
 const resume = require('./resume.json');
 const linkifyStr = require('linkifyjs/string');
 
