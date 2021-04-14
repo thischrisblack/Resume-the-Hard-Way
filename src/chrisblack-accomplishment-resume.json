@@ -39,11 +39,12 @@
             "project__name": "American Board of Radiology",
             "project__date": "2019 - Present",
             "project__link": "www.theabr.org",
-            "project__description": "The ABR is one of 24 medical boards in the United States. As a full-stack software developer, I have been primarily responsible for RADS, an exam-creation application meant to serve 16,000 volunteers and the committees that oversee their efforts.",
+            "project__description": "As a full-stack software developer, I have been primarily responsible for RADS, a board certification exam-creation web application meant to serve volunteers and the committees overseeing their efforts.",
             "project__accomplishments": [
-                "From mockups or written requirements, I built feature components and full workflows for numerous organizational roles, working with equal comfort in the API and UI.", 
-                "These workflows included exam question creation, image upload and in-browser editing, and tracking the progress of proposed exam material from its creation through a multi-phase, multi-role approval process.",
-                "I initiated a major refactoring session to reduce the complexity of the flux store, trim bloated API responses, and eliminate dead code. This resulted in 81 insertions, 2436 deletions, and a much more maintainable codebase."
+                "From mockups or written requirements, I build features and workflows enabling exam creation and organization, image upload with in-browser editing, and status-tracking of proposed exam material through a multi-phase, multi-role approval process.", 
+                "During the last year-plus of rapid development, I have twice initiated and executed rounds of code cleanup to reduce the growing complexity of the flux store and eliminate dead code. The last such session resulted in a final merge yielding 81 insertions and 2436 deletions.",
+                "I routinely review the API code for optimization opportunities, including a recent discovery of a call returning 15MB of text data which took nearly 30s to fulfill. This response was reduced to 57KB/1.5s for the same view. I find this work tremendously satisfying.",
+                "Other duties include code review, which I welcome as a learning opportunity whether reviewing or being reviewed; working with team leads and UX designers during feature planning and development; working with in-house users and QA during testing and further iteration."
             ],
             "project__skills": [
                 "TypeScript",
@@ -59,7 +60,10 @@
             "project__name": "OpenForm",
             "project__date": "2019",
             "project__link": "www.openform.co",
-            "project__description": "As a contractor for an award winning strategy and design studio, I performed custom WordPress theme development.",
+            "project__description": "As a contractor for an award-winning strategy and design studio, I performed custom WordPress theme development.",
+            "project__accomplishments": [
+                "I reviewed the new WorPress Gutenberg editor for possible implementation in upcoming studio projects."
+            ],
             "project__skills": [
                 "PHP",
                 "WordPress",
@@ -72,13 +76,14 @@
             "project__name": "Chicago Music Store",
             "project__date": "2008 - 2019",
             "project__link": "www.chicagomusicstore.com",
-            "project__description": "I maintained the company website and developed custom web applications and tools, including:",
+            "project__description": "While managing the sheet music department of a family-owned music store, I maintained the WordPress website, taught myself PHP/MySQL, and built the following tools:",
             "project__accomplishments": [
-                "A custom portal for customers to reserve rental instruments online.",
-                "An in-house application to assist staff in managing delinquent accounts. See \"the-fishpond\" on my GitHub page.",
-                "Numerous other in-house tools, including apps to plan public events and to place and track sheet music orders."
+                "A web interface allowing customers to reserve musical instruments online. This tool currently accounts for 20% of their rental business, which itself is a vital part of the store's revenue.",
+                "A tool to assist in ordering and tracking delivery of thousands of pieces of sheet music to dozens of different locations across the state, winning back the business of a music festival account worth $25-$30,000 in yearly sales. This tool automated a great deal of work, reducing a task that once took many days to a matter of hours.",
+                "A contact management tool to assist with delinquent rental account collection calls, automating and organizing the task so that an entire round of calls to all delinquent accounts could be made once per day, rather than once per week. The app also generated reports on call volume and success, money owed and collected, and other metrics.",
+                "An app for the collaborative organization of on-campus school \"Rental Season\" events. These events were previously planned with an assortment of Excel sheets on a shared drive, but moving the process to a web app kept information accessible and up-to-date, as well as providing useful calendar-based views."
             ],
-            "project__skills": ["PHP", "Wordpress", "HTML", "CSS", "JavaScript", "MySQL"]
+            "project__skills": ["PHP", "WordPress", "HTML", "CSS", "JavaScript", "MySQL"]
         }
     ],
 
