@@ -71,7 +71,7 @@ const layout = [
     ['.contact', 'contact'],
     ['.experience', 'main'],
     ['.projects', 'main'],
-    ['.portfolio', 'aside'],
+    ['.website', 'aside'],
     ['.skills', 'aside'],
     ['.footer', 'footer'],
 ];
@@ -103,7 +103,7 @@ function linkifier() {
     // Linkify text in these classes
     const linkNodes = [
         '.email',
-        '.portfolio',
+        '.website',
         '.project__link',
         '.note',
         '.footer',
@@ -150,7 +150,7 @@ linkifier();
  * DO NOT enable this for web deployment, or else your nodes will disappear
  * when people click on the links, etc.
  */
-// enableHideableNodes();
+enableHideableNodes();
 
 // Set the page title
 document.title = resume.name + ' - Resume';

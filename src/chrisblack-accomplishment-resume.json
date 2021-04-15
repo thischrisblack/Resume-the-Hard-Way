@@ -13,7 +13,7 @@
         "email": "black@chrisblack.net"
     },
 
-    "portfolio": "chrisblack.net",
+    "website": "chrisblack.net",
 
     "skills": [
         "JavaScript",
@@ -32,19 +32,21 @@
         "PHP"
     ],
 
-    "footer": "This resume was generated from a JSON file using JavaScript. Code at www.github.com/thischrisblack/Resume-the-Hard-Way.",
+    "footer": "This resume was generated from a JSON file. Code at www.github.com/thischrisblack/Resume-the-Hard-Way.",
 
     "professional experience": [
         {
             "project__name": "American Board of Radiology",
             "project__date": "2019 - Present",
-            "project__link": "www.theabr.org",
-            "project__description": "As a full-stack software developer, I have been primarily responsible for RADS, a board certification exam-creation web application meant to serve volunteers and the committees overseeing their efforts.",
+            "project__job": "Software Developer",
+            "project__description": "I have been primarily responsible for RADS, a web app used for exam creation and organization, including image upload with in-browser editing and exam material status-tracking through a multi-phase, multi-role approval process.",
             "project__accomplishments": [
-                "From mockups or written requirements, I build features and workflows enabling exam creation and organization, image upload with in-browser editing, and status-tracking of proposed exam material through a multi-phase, multi-role approval process.", 
-                "During the last year-plus of rapid development, I have twice initiated and executed rounds of code cleanup to reduce the growing complexity of the flux store and eliminate dead code. The last such session resulted in a final merge yielding 81 insertions and 2436 deletions.",
-                "I routinely review the API code for optimization opportunities, including a recent discovery of a call returning 15MB of text data which took nearly 30s to fulfill. This response was reduced to 57KB/1.5s for the same view. I find this work tremendously satisfying.",
-                "Other duties include code review, which I welcome as a learning opportunity whether reviewing or being reviewed; working with team leads and UX designers during feature planning and development; working with in-house users and QA during testing and further iteration."
+                "Build new features and full workflows from mockups or written requirements.", 
+                "Tech debt refactoring rounds to reduce complexity and remove dead code. Recent result: a merge yielding 81 insertions and 2,436 deletions.",
+                "API optimization. Example: reduced a response of 15MB of text to 57KB, saving 28s loading the same view.",
+                "Convert institutional \"tacit knowledge\" to documentation available in the company wiki.",
+                "Communication: Work with users, staff, UX designers, and QA engineers throughout the development process.",
+                "Participate in daily code review."
             ],
             "project__skills": [
                 "TypeScript",
@@ -59,10 +61,10 @@
         {
             "project__name": "OpenForm",
             "project__date": "2019",
-            "project__link": "www.openform.co",
+            "project__job": "WordPress Developer",
             "project__description": "As a contractor for an award-winning strategy and design studio, I performed custom WordPress theme development.",
             "project__accomplishments": [
-                "I reviewed the new WordPress Gutenberg editor for possible implementation in upcoming studio projects."
+                "Reviewed the new WordPress Gutenberg editor for possible implementation in upcoming studio projects."
             ],
             "project__skills": [
                 "PHP",
@@ -75,19 +77,19 @@
         {
             "project__name": "Chicago Music Store",
             "project__date": "2008 - 2019",
-            "project__link": "www.chicagomusicstore.com",
-            "project__description": "While managing the sheet music department of a family-owned music store, I maintained the WordPress website, taught myself PHP/MySQL, and built the following tools:",
+            "project__job": "Software Developer",
+            "project__description": "While managing the sheet music department of a family-owned music store, I maintained the WordPress website, taught myself PHP, and built the following tools to automate and simplify daily tasks:",
             "project__accomplishments": [
-                "A web interface allowing customers to reserve musical instruments online. This tool currently accounts for 20% of their rental business, which itself is a vital part of the store's revenue.",
-                "A tool to assist in ordering and tracking delivery of thousands of pieces of sheet music to dozens of different locations across the state, winning back the business of a music festival account worth $25-$30,000 in yearly sales. This tool automated a great deal of work, reducing a task that once took many days to a matter of hours.",
-                "A contact management tool to assist with delinquent rental account collection calls, automating and organizing the task so that an entire round of calls to all delinquent accounts could be made once per day, rather than once per week. The app also generated reports on call volume and success, money owed and collected, and other metrics.",
-                "An app for the collaborative organization of on-campus school \"Rental Season\" events. These events were previously planned with an assortment of Excel sheets on a shared drive, but moving the process to a web app kept information accessible and up-to-date, as well as providing useful calendar-based views."
+                "A web interface allowing customers to rent musical instruments, which now accounts for 20% of their rental business.",
+                "A tool to automate the task of ordering and tracking large quantities of sheet music across the state, reducing the work of days to a matter of hours, winning back an account worth $30,000/year.",
+                "A contact management tool to automate large parts of the collection process, so that a round of calls to all delinquent accounts could be made once per day, rather than once per week.",
+                "A tool for collaborative event organization, moving the workflow from a number of shared Excel sheets to a centralized app, reducing errors, lost data, and miscommunications."
             ],
             "project__skills": ["PHP", "WordPress", "HTML", "CSS", "JavaScript", "MySQL"]
         }
     ],
 
-    "selected projects": [
+    "projects": [
         {
             "project__name": "Shelly Black's Website",
             "project__link": "github.com/thischrisblack/shelly-black-website",
@@ -111,6 +113,60 @@
             "project__link": "twitter.com/glengarrybob",
             "project__description": "A bot that tweets out images of Bob Ross captioned with lines from the film Glengarry Glen Ross.",
             "project__skills": ["JavaScript", "Node.js", "Heroku", "JIMP"]
+        },
+        {
+          "project__name": "Vexations",
+          "project__link": "www.chrisblack.net/vexations",
+          "project__description": "A web app to help you play Erik Satie's \"Vexations\" 840 times in a row on the piano, as he intended.",
+          "project__skills": ["JavaScript", "HTML", "CSS", "CSS Grid"]
+        },
+        {
+            "project__name": "Tailwind Config Spectrum",
+            "project__link": "github.com/thischrisblack/tailwind-config-spectrum",
+            "project__description": "Drop in your Tailwind config file to see the rainbow of custom colors you've created in a quick, easy reference.",
+            "project__skills": ["JavaScript", "HTML", "CSS", "Tailwind CSS"]
+        },
+        {
+            "project__name": "The Fishpond",
+            "project__link": "github.com/thischrisblack/the-fishpond",
+            "project__description": "A retail contact management tool to track collection activities on overdue musical instrument rental accounts.",
+            "project__skills": [
+                "PHP",
+                "MySQL",
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript"
+            ]
+        },
+        {
+          "project__name": "Spending Tracker",
+          "project__link": "github.com/thischrisblack/the-food-budget",
+          "project__description": "A Vue.js web app to track spending in user-defined categories, with a PHP/MySQL API on the backend.",
+          "project__skills": [
+            "Vue.js",
+            "PHP",
+            "MySQL",
+            "HTML",
+            "CSS",
+            "Sass",
+            "CSS Grid",
+            "JavaScript",
+            "REST API"
+          ]
+        },
+        {
+          "project__name": "Viral Content",
+          "project__link": "https://github.com/thischrisblack/viral-content",
+          "project__description": "A React-based hostile shopping cart experiment.",
+          "project__skills": [
+            "React",
+            "JavaScript",
+            "Sass",
+            "CSS Grid",
+            "Flexbox",
+            "PhotoShop"
+          ]
         }
     ]
 }

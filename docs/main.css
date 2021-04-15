@@ -1,7 +1,5 @@
 /*  Available Fonts:
     font-family: 'Source Sans Pro', sans-serif;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Lora', serif; 
     font-family: 'IBM Plex Mono', monospace;
 */
 
@@ -218,12 +216,14 @@ ul.experience li {
 }
 
 .project__link,
+.project__job,
 .project__date {
     font-size: 1.7rem;
     display: inline-block;
 }
 
 .project__link:before,
+.project__job:before,
 .project__date:before {
     content: '/';
     margin: 0 1rem;
@@ -235,6 +235,7 @@ ul.experience li {
     }
 
     .project__link:before,
+    .project__job:before,
     .project__date:before {
         content: '';
         margin: 0;
@@ -287,7 +288,7 @@ aside {
     padding: 0 1.5rem;
 }
 
-.portfolio {
+.website {
     font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -397,9 +398,12 @@ PRINT STYLES
         content: '.';
     }
 
-    ul.projects li,
     ul.experience li {
         margin: 2rem 0;
+    }
+
+    ul.projects li {
+        margin: 0.75rem 0;
     }
 
     .section-header {
